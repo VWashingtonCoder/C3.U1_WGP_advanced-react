@@ -1,10 +1,10 @@
 import React from 'react'
 
 export default class App extends React.Component {
-  render = () => {
+  render() {
     return (
       <div>
-        <h2>Class Components</h2>
+        <h2>It is working</h2>
       </div>
     )
   }
