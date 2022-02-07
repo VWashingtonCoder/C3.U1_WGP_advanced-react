@@ -39,6 +39,7 @@ export default class ClassComponent extends React.Component {
     const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
     axios.post(URL, payloadToSend)
       .then(res => {
+        // adapt this to the endpoint at hand!!!!!!!
         this.setState({ ...this.state, quotes: res.data.quotes }) // do not copy & paste this code
       })
       .catch(err => {
