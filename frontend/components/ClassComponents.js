@@ -84,8 +84,10 @@ export default class ClassComponent extends React.Component {
           }
         </ul>
         <Form
-          onSubmit=
-          
+          onSubmit={this.onSubmit}
+          onChange={this}
+          textInput={this}
+          authorInput={this}
         />
       </div>
     )
