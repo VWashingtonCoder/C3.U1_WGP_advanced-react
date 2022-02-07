@@ -48,8 +48,8 @@ export default class ClassComponent extends React.Component {
       })
   }
 
-  onClick = id => {
-
+  onClick = id => event => {
+    console.log(`you want to delete quote ${id}`)
   }
 
   render() {  // no arrow func!!
