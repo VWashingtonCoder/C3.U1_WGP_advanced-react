@@ -1,5 +1,5 @@
 {
-  "name": "web-gp-advanced-react-solution",
+  "name": "web-gp-advanced-react",
   "version": "0.0.1",
   "scripts": {
     "dev": "fkill :9000 :3000 -s && concurrently \"npm:backend\" \"npm:frontend\"",
@@ -8,7 +8,8 @@
     "heroku-postbuild": "npm run webpack",
     "frontend": "webpack serve --open",
     "backend": "node index.js",
-    "start": "npm run backend"
+    "start": "npm run backend",
+    "ketchup": "git fetch && git reset --hard origin/lecture"
   },
   "devDependencies": {
     "@babel/core": "7.17.0",
