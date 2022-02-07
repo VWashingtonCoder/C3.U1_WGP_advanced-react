@@ -5,7 +5,7 @@ const initialState = {
   error: 'Quote not found',
 }
 
-export default class App extends React.Component {
+export default class ClassComponent extends React.Component {
   // constructor(props) {
   //   super(props)
   //   this.state = initialState
