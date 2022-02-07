@@ -18,7 +18,7 @@ export default class ClassComponent extends React.Component {
     axios.get(URL)
       .then(res => {
         console.log(res) // res.data.quotes // is where the list of quotes
-        this.setState({  })
+        this.setState({ ...this.state, quotes:  })
       })
       .catch(err => {
         console.log(err)
