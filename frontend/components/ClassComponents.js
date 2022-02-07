@@ -13,6 +13,7 @@ export default class ClassComponent extends React.Component {
   // constructor(props) {
   //   super(props)
   //   this.state = initialState
+  //   this.onChange = this.onChange.bind(this)
   // }
   state = initialState
 
@@ -28,8 +29,8 @@ export default class ClassComponent extends React.Component {
       })
   }
 
-  onChange = evt => {
-    
+  onChange() {
+
   }
 
   render() {  // no arrow func!!
