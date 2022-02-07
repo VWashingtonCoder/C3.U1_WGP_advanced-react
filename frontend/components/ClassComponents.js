@@ -30,7 +30,7 @@ export default class ClassComponent extends React.Component {
   }
 
   onChange = event => { // use arrow function for custom methods
-    console.log('typing but nothing happens')
+    const { value, id } = event.target
   }
 
   render() {  // no arrow func!!
