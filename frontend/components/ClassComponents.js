@@ -2,7 +2,7 @@ import React from 'react'
 
 const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe' }],
-  error: 'Quote not found',
+  error: 'No error, everything is cool!',
 }
 
 export default class ClassComponent extends React.Component {
@@ -20,7 +20,7 @@ export default class ClassComponent extends React.Component {
         <div id="error">Error: {this.state.error}</div>
         <ul>
           {
-
+            this.state.quotes
           }
         </ul>
       </div>
