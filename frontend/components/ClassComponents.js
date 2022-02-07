@@ -24,8 +24,8 @@ export default class ClassComponent extends React.Component {
         this.setState({ ...this.state, quotes: res.data.quotes })
       })
       .catch(err => {
-        console.log(err)
-        debugger
+        const errorFromAPI = err.response.data.message
+        this.setState({ ...this.state, error: errorFromAPI })
       })
   }
 
@@ -43,7 +43,7 @@ export default class ClassComponent extends React.Component {
         this.setState({ ...this.state, quotes: res.data.quotes }) // do not copy & paste this code
       })
       .catch(err => {
-        // you could use this.onError (see onDelete)
+        // you could use this.onError (see onDelete and componentDidMount)
         const errorFromAPI = err.response.data.message
         this.setState({ ...this.state, error: errorFromAPI })
       })
@@ -66,13 +66,6 @@ export default class ClassComponent extends React.Component {
         })
       })
       .catch(this.onError)
-    // only frontend hack
-    // this.setState({
-    //   ...this.state,
-    //   quotes: this.state.quotes.filter(qo => {
-    //     return qo.id !== id
-    //   })
-    // })
   }
 
   render() {  // no arrow func!!
