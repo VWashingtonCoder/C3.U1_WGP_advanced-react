@@ -42,7 +42,11 @@ export default class ClassComponent extends React.Component {
         // adapt this to the endpoint at hand!!!!!!!
         this.setState({ ...this.state, quotes: res.data.quotes }) // do not copy & paste this code
       })
-      .catch(th)
+      .catch(err => {
+        // you could use this.onError (see onDelete)
+        const errorFromAPI = err.response.data.message
+        this.setState({ ...this.state, error: errorFromAPI })
+      })
   }
 
   onError = err => {
