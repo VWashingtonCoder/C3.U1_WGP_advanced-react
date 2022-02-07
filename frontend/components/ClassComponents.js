@@ -4,6 +4,8 @@ import axios from 'axios'
 const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
   error: 'No error, everything is cool!',
+  textInput: '',
+  authorInput: '',
 }
 const URL = 'http://localhost:9000/api/quotes'
 
