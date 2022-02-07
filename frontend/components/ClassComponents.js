@@ -57,6 +57,7 @@ export default class ClassComponent extends React.Component {
   onDelete = id => event => { // eslint-disable-line
     axios.delete(`${URL}/${id}`)
       .then(res => { // eslint-disable-line
+        // we could hit axios.get() but we are just going to do fe surgery
         this.setState({
           ...this.state,
           quotes: this.state.quotes.filter(qo => {
