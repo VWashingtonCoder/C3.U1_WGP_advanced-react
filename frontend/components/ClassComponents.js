@@ -49,7 +49,9 @@ export default class ClassComponent extends React.Component {
   }
 
   onDelete = id => event => {
-    console.log(`you want to delete quote ${id}`)
+    this.setState({
+      
+    })
   }
 
   render() {  // no arrow func!!
