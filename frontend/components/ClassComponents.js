@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import Form from './'
+import Form from './QuoteForm'
 
 const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
@@ -83,11 +83,10 @@ export default class ClassComponent extends React.Component {
             ))
           }
         </ul>
-        <form onSubmit={this.onSubmit}>
-          <input onChange={this.onChange} value={this.state.textInput} type="text" id="textInput" placeholder="type text" />
-          <input onChange={this.onChange} value={this.state.authorInput} type="text" id="authorInput" placeholder="type author" />
-          <input type="submit" />
-        </form>
+        <Form
+          onSubmit=
+          
+        />
       </div>
     )
   }
