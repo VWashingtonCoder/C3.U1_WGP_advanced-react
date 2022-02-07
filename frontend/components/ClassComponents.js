@@ -1,7 +1,7 @@
 import React from 'react'
 
 const initialState = {
-  quotes: [],
+  quotes: [{ author: 'Gabe', text: 'Do not troll Gabe' }],
 }
 
 export default class App extends React.Component {
