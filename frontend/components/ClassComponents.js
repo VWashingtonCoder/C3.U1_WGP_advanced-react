@@ -38,9 +38,8 @@ export default class ClassComponent extends React.Component {
     event.preventDefault()
     const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
     axios.post(URL, payloadToSend)
-    .then(res => {
-      debugger
-        // this.setState({ ...this.state, quotes: res.data })
+      .then(res => {
+        this.setState({ ...this.state, quotes: res.data.quotes })
       })
       .catch(err => {
         const errorFromAPI = err.response.data.message
