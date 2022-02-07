@@ -50,6 +50,13 @@ export default class ClassComponent extends React.Component {
 
   onDelete = id => event => {
     axios.delete(`${URL}/${id}`)
+      .then(res => {
+
+      })
+      .catch(err => {
+        const errorFromAPI = err.response.data.message
+        this.setState({ ...this.state, error: errorFromAPI })
+      })
     // only frontend hack
     // this.setState({
     //   ...this.state,
