@@ -17,8 +17,8 @@ export default class ClassComponent extends React.Component {
   componentDidMount() { // no arrow func!!
     axios.get(URL)
       .then(res => {
-        console.log(res)
-        this.setState()
+        console.log(res) // res.data.quotes // is where the list of quotes
+        this.setState({  })
       })
       .catch(err => {
         console.log(err)
