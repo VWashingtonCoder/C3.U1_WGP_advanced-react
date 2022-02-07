@@ -37,14 +37,14 @@ export default class ClassComponent extends React.Component {
   onSubmit = event => {
     event.preventDefault()
     const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
-    this.setState({ ...this.state, quotes: this.state.quotes.concat(payloadToSend) })
-    // axios.post(URL, payloadToSend)
-    //   .then(res => {
-    //   })
-    //   .catch(err => {
-    //     const errorFromAPI = err.response.data.message
-    //     this.setState({ ...this.state, error: errorFromAPI })
-    //   })
+    axios.post(URL, payloadToSend)
+    .then(res => {
+        this.setState({ ...this.state, quotes: res.data })
+      })
+      .catch(err => {
+        const errorFromAPI = err.response.data.message
+        this.setState({ ...this.state, error: errorFromAPI })
+      })
   }
 
   render() {  // no arrow func!!
