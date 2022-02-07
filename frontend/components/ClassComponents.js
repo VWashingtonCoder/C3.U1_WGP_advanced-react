@@ -42,6 +42,7 @@ export default class ClassComponent extends React.Component {
         debugger
       })
       .catch(err => {
+        const errorFromAPI = err.
         debugger
       })
   }
