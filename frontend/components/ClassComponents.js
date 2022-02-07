@@ -28,6 +28,10 @@ export default class ClassComponent extends React.Component {
       })
   }
 
+  onChange = evt => {
+    
+  }
+
   render() {  // no arrow func!!
     console.log('THE STATE ---> ', this.state)
     return (
