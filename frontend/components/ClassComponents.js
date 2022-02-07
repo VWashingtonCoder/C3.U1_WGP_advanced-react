@@ -48,6 +48,10 @@ export default class ClassComponent extends React.Component {
       })
   }
 
+  onClick = id => event => {
+
+  }
+
   render() {  // no arrow func!!
     console.log('THE STATE ---> ', this.state)
     return (
