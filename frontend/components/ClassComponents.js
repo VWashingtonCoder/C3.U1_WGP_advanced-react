@@ -13,6 +13,7 @@ export default class App extends React.Component {
   state = initialState
 
   render() {
+    console.log(this.state)
     return (
       <div>
         <h2>It is working</h2>
