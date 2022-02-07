@@ -18,10 +18,11 @@ export default class ClassComponent extends React.Component {
       <div>
         <h2>It is working</h2>
         <div id="error">Error: {this.state.error}</div>
+        <div>Quotes</div>
         <ul>
           {
             this.state.quotes.map(qo => (
-              <li>{}</li>
+              <li>{qo.text}</li>
             ))
           }
         </ul>
