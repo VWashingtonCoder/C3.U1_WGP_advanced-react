@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import Form from './'
 
 const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
