@@ -39,7 +39,7 @@ export default class ClassComponent extends React.Component {
     const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
     axios.post(URL, payloadToSend)
       .then(res => {
-        debugger
+        this.setState({ ...this.state, quotes: this.state.quotes.concat() })
       })
       .catch(err => {
         const errorFromAPI = err.response.data.message
