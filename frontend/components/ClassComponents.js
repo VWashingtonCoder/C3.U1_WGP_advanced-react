@@ -1,7 +1,7 @@
 import React from 'react'
 
 const initialState = {
-  
+  quotes: [],
 }
 
 export default class App extends React.Component {
