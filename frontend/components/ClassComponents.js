@@ -36,7 +36,7 @@ export default class ClassComponent extends React.Component {
 
   onSubmit = event => {
     event.preventDefault()
-    const payloadToSend = {  }
+    const payloadToSend = { author: this.state. }
     axios.post(URL, payloadToSend)
   }
 
