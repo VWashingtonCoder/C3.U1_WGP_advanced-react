@@ -29,8 +29,8 @@ export default class ClassComponent extends React.Component {
       })
   }
 
-  onChange() {
-
+  onChange = event => {
+    console.log('hitting ')
   }
 
   render() {  // no arrow func!!
