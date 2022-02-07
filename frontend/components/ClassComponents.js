@@ -24,10 +24,7 @@ export default class ClassComponent extends React.Component {
         console.log(res) // res.data.quotes // is where the list of quotes
         this.setState({ ...this.state, quotes: res.data.quotes })
       })
-      .catch(err => {
-        const errorFromAPI = err.response.data.message
-        this.setState({ ...this.state, error: errorFromAPI })
-      })
+      .catch(this.onError)
   }
 
   onChange = event => { // use arrow function for custom methods
