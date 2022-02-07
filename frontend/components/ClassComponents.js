@@ -49,10 +49,11 @@ export default class ClassComponent extends React.Component {
   }
 
   onDelete = id => event => {
+    // only frontend hack
     this.setState({
       ...this.state,
       quotes: this.state.quotes.filter(qo => {
-        return qo.id != id
+        return qo.id !== id
       })
     })
   }
