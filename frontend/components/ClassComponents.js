@@ -18,11 +18,11 @@ export default class ClassComponent extends React.Component {
     axios.get(URL)
       .then(res => {
         console.log(res)
-        // debugger
+        this.setState()
       })
       .catch(err => {
         console.log(err)
-        // debugger
+        debugger
       })
   }
 
