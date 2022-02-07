@@ -17,10 +17,12 @@ export default class ClassComponent extends React.Component {
   componentDidMount() { // no arrow func!!
     axios.get(URL)
       .then(res => {
-         console.log(res)
+        console.log(res)
+        debugger
       })
       .catch(err => {
         console.log(err)
+        debugger
       })
   }
 
