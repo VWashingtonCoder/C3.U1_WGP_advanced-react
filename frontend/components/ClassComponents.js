@@ -57,7 +57,7 @@ export default class ClassComponent extends React.Component {
   onDelete = id => event => {
     axios.delete(`${URL}/${id}`)
       .then(res => {
-
+        debugger
       })
       .catch(this.onError)
     // only frontend hack
