@@ -36,8 +36,14 @@ export default class ClassComponent extends React.Component {
 
   onSubmit = event => {
     event.preventDefault()
-    const payloadToSend = { author: this.state.authorInput }
+    const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
     axios.post(URL, payloadToSend)
+      .then(res => {
+        debugger
+      })
+      .catch(err => {
+        debugger
+      })
   }
 
   render() {  // no arrow func!!
