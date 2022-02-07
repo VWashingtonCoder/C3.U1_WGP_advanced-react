@@ -54,11 +54,11 @@ export default class ClassComponent extends React.Component {
     this.setState({ ...this.state, error: errorFromAPI })
   }
 
-  onDelete = id => event => {
+  onDelete = id => event => { // eslint-disable-line
     axios.delete(`${URL}/${id}`)
-      .then(res => {
+      .then(res => { // eslint-disable-line
         this.setState({ ...this.state, quotes: this.state.quotes.filter(qo => {
-          
+          return qo.id !== id
         }) })
       })
       .catch(this.onError)
