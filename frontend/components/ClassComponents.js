@@ -34,6 +34,8 @@ export default class ClassComponent extends React.Component {
     this.setState({ ...this.state, [id]: value })
   }
 
+  onSubmit = 
+
   render() {  // no arrow func!!
     console.log('THE STATE ---> ', this.state)
     return (
@@ -48,7 +50,7 @@ export default class ClassComponent extends React.Component {
             ))
           }
         </ul>
-        <form >
+        <form onSubmit={this.onSubmit}>
           <input onChange={this.onChange} value={this.state.textInput} type="text" id="textInput" placeholder="type text" />
           <input onChange={this.onChange} value={this.state.authorInput} type="text" id="authorInput" placeholder="type author" />
           <input type="submit" />
