@@ -2,7 +2,7 @@ import React from 'react'
 
 const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe' }],
-  error: 'Quote not found'
+  error: 'Quote not found',
 }
 
 export default class App extends React.Component {
