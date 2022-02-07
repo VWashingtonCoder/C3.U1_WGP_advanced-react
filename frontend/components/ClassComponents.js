@@ -50,7 +50,10 @@ export default class ClassComponent extends React.Component {
 
   onDelete = id => event => {
     this.setState({
-      
+      ...this.state,
+      quotes: this.state.quotes.filter(qo => {
+        return qo.id != id
+      })
     })
   }
 
