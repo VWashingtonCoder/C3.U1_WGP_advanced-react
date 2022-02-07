@@ -43,7 +43,7 @@ export default class ClassComponent extends React.Component {
       })
       .catch(err => {
         const errorFromAPI = err.response.message
-        this.setState({ ...this.state,  })
+        this.setState({ ...this.state, error: errorFromAPI })
       })
   }
 
