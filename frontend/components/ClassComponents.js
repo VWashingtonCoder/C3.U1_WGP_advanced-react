@@ -14,7 +14,7 @@ export default class ClassComponent extends React.Component {
   state = initialState
 
   componentDidMount() { // no arrow func!!
-
+    
   }
 
   render() {  // no arrow func!!
