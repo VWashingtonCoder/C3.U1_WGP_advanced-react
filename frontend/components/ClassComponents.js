@@ -40,6 +40,9 @@ export default class ClassComponent extends React.Component {
             ))
           }
         </ul>
+        <form>
+          <input type="text" id="text"
+        </form>
       </div>
     )
   }
