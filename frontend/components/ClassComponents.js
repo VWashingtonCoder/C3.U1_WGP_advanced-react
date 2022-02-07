@@ -49,13 +49,14 @@ export default class ClassComponent extends React.Component {
   }
 
   onDelete = id => event => {
+    axios.delete()
     // only frontend hack
-    this.setState({
-      ...this.state,
-      quotes: this.state.quotes.filter(qo => {
-        return qo.id !== id
-      })
-    })
+    // this.setState({
+    //   ...this.state,
+    //   quotes: this.state.quotes.filter(qo => {
+    //     return qo.id !== id
+    //   })
+    // })
   }
 
   render() {  // no arrow func!!
