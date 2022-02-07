@@ -4,6 +4,7 @@ const initialState = {
   quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
   error: 'No error, everything is cool!',
 }
+const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponent extends React.Component {
   // constructor(props) {
