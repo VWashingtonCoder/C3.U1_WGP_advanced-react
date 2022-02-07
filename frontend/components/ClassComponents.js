@@ -87,7 +87,7 @@ export default class ClassComponent extends React.Component {
           onSubmit={this.onSubmit}
           onChange={this.onChange}
           textInput={this.state.textInput}
-          authorInput={this.state.textInput}
+          authorInput={this.state.authorInput}
         />
       </div>
     )
