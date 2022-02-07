@@ -20,7 +20,9 @@ export default class ClassComponent extends React.Component {
         <div id="error">Error: {this.state.error}</div>
         <ul>
           {
-            this.state.quotes
+            this.state.quotes.map(qo => (
+              <li>{}</li>
+            ))
           }
         </ul>
       </div>
