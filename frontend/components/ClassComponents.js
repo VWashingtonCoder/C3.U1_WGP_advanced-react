@@ -6,6 +6,9 @@ const initialState = {
 }
 
 export default class App extends React.Component {
+  
+  state = initialState
+
   render() {
     return (
       <div>
