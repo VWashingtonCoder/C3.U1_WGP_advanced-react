@@ -36,7 +36,7 @@ export default class ClassComponent extends React.Component {
 
   onSubmit = event => {
     event.preventDefault()
-    
+    const payload = 
   }
 
   render() {  // no arrow func!!
