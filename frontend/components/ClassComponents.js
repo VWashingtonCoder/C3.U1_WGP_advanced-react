@@ -17,6 +17,11 @@ export default class ClassComponent extends React.Component {
     return (
       <div>
         <h2>It is working</h2>
+        <ul>
+          {
+            
+          }
+        </ul>
       </div>
     )
   }
