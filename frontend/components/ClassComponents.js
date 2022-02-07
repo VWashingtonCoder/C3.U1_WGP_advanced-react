@@ -49,7 +49,7 @@ export default class ClassComponent extends React.Component {
   }
 
   onDelete = id => event => {
-    axios.delete()
+    axios.delete(`${URL}/${id}`)
     // only frontend hack
     // this.setState({
     //   ...this.state,
