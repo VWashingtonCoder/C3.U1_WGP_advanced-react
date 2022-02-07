@@ -27,7 +27,7 @@ export default class ClassComponent extends React.Component {
   }
 
   render() {  // no arrow func!!
-    console.log(this.state)
+    console.log('THE STATE ---> ', this.state)
     return (
       <div>
         <h2>It is working</h2>
