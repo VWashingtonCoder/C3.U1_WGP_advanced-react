@@ -44,7 +44,7 @@ export default class ClassComponent extends React.Component {
         </ul>
         <form>
           <input value={this.state.textInput} type="text" id="text" placeholder="type text" />
-          <input value={} type="text" id="author" placeholder="type author" />
+          <input value={this.state.authorInput} type="text" id="author" placeholder="type author" />
           <input type="submit" />
         </form>
       </div>
