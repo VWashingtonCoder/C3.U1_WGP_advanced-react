@@ -41,7 +41,8 @@ export default class ClassComponent extends React.Component {
           }
         </ul>
         <form>
-          <input type="text" id="text"
+          <input type="text" id="text" placeholder="type text" />
+          <input type="text" id="text" placeholder="type text" />
         </form>
       </div>
     )
