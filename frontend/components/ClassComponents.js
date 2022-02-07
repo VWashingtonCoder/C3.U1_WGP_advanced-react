@@ -34,7 +34,9 @@ export default class ClassComponent extends React.Component {
     this.setState({ ...this.state, [id]: value })
   }
 
-  onSubmit = 
+  onSubmit = event => {
+    event.preventDefault()
+  }
 
   render() {  // no arrow func!!
     console.log('THE STATE ---> ', this.state)
