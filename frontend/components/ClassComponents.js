@@ -17,7 +17,7 @@ export default class ClassComponent extends React.Component {
     return (
       <div>
         <h2>It is working</h2>
-        <div>Error: {}</div>
+        <div id="error">Error: {this.state.error}</div>
         <ul>
           {
 
