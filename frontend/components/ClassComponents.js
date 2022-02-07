@@ -31,7 +31,7 @@ export default class ClassComponent extends React.Component {
 
   onChange = event => { // use arrow function for custom methods
     const { value, id } = event.target
-    this.setState({ ...this.state, [`${id}Input`]: value })
+    this.setState({ ...this.state, [id]: value })
   }
 
   render() {  // no arrow func!!
@@ -49,8 +49,8 @@ export default class ClassComponent extends React.Component {
           }
         </ul>
         <form>
-          <input onChange={this.onChange} value={this.state.textInput} type="text" id="text" placeholder="type text" />
-          <input onChange={this.onChange} value={this.state.authorInput} type="text" id="author" placeholder="type author" />
+          <input onChange={this.onChange} value={this.state.textInput} type="text" id="textInput" placeholder="type text" />
+          <input onChange={this.onChange} value={this.state.authorInput} type="text" id="authorInput" placeholder="type author" />
           <input type="submit" />
         </form>
       </div>
