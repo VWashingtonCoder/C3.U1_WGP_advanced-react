@@ -42,10 +42,12 @@ export default class ClassComponent extends React.Component {
         // adapt this to the endpoint at hand!!!!!!!
         this.setState({ ...this.state, quotes: res.data.quotes }) // do not copy & paste this code
       })
-      .catch(err => {
-        const errorFromAPI = err.response.data.message
-        this.setState({ ...this.state, error: errorFromAPI })
-      })
+      .catch(th)
+  }
+
+  onError = err => {
+    const errorFromAPI = err.response.data.message
+    this.setState({ ...this.state, error: errorFromAPI })
   }
 
   onDelete = id => event => {
@@ -53,10 +55,7 @@ export default class ClassComponent extends React.Component {
       .then(res => {
 
       })
-      .catch(err => {
-        const errorFromAPI = err.response.data.message
-        this.setState({ ...this.state, error: errorFromAPI })
-      })
+      .catch(this.onError)
     // only frontend hack
     // this.setState({
     //   ...this.state,
