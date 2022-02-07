@@ -42,7 +42,8 @@ export default class ClassComponent extends React.Component {
         debugger
       })
       .catch(err => {
-        const errorFromAPI = err.response.message
+        debugger
+        const errorFromAPI = err.response.data.message
         this.setState({ ...this.state, error: errorFromAPI })
       })
   }
