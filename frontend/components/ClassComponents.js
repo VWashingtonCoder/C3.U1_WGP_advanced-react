@@ -48,7 +48,7 @@ export default class ClassComponent extends React.Component {
       })
   }
 
-  onClick = id => event => {
+  onDelete = id => event => {
     console.log(`you want to delete quote ${id}`)
   }
 
@@ -62,7 +62,7 @@ export default class ClassComponent extends React.Component {
         <ul>
           {
             this.state.quotes.map(qo => (
-              <li key={qo.id}>{qo.author} sayz {qo.text} <button onClick={this.onClick(qo.id)}>del</button></li>
+              <li key={qo.id}>{qo.author} sayz {qo.text} <button onClick={this.onDelete(qo.id)}>del</button></li>
             ))
           }
         </ul>
