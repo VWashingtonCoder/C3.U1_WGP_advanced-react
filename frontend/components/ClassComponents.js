@@ -58,6 +58,7 @@ export default class ClassComponent extends React.Component {
     axios.delete(`${URL}/${id}`)
       .then(res => {
         debugger
+        this.setState({ ...this.state, })
       })
       .catch(this.onError)
     // only frontend hack
