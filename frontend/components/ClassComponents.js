@@ -58,7 +58,7 @@ export default class ClassComponent extends React.Component {
         <ul>
           {
             this.state.quotes.map(qo => (
-              <li key={qo.id}>{qo.author} sayz {qo.text}</li>
+              <li key={qo.id}>{qo.author} sayz {qo.text} <button onClick={this.onClick}>del</button></li>
             ))
           }
         </ul>
