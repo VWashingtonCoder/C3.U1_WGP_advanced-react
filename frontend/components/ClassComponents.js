@@ -1,7 +1,7 @@
 import React from 'react'
 
 const initialState = {
-  quotes: [{ author: 'Gabe', text: 'Do not troll Gabe' }],
+  quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
   error: 'No error, everything is cool!',
 }
 
@@ -22,7 +22,7 @@ export default class ClassComponent extends React.Component {
         <ul>
           {
             this.state.quotes.map(qo => (
-              <li>{qo.author} sayz {qo.text}</li>
+              <li key={qo.id}>{qo.author} sayz {qo.text}</li>
             ))
           }
         </ul>
