@@ -27,8 +27,10 @@ class TheChild extends React.Component {
   constructor(props) {
     super(props)
     this.state = { counter: 0, error: '', favToys: [] }
+    console.log('👉 constructor function executed')
   }
   increment = evt => { // eslint-disable-line
+    console.log('👉 constructor function executed')
     this.setState((state) => ({
       ...state,
       counter: state.counter + 1,
