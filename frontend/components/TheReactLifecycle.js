@@ -49,6 +49,9 @@ class TheChild extends React.Component {
     //   }
     // }, [])
   }
+  componentDidUpdate() {
+    
+  }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
     this.setState((state) => ({
