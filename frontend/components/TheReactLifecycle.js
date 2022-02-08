@@ -54,6 +54,7 @@ class TheChild extends React.Component {
     // further state changes (axios calls etc) based on that
     console.log('👉 component re-rendered', oldProps, oldState, this.props, this.state)
     console.log(`------> before the re-render, counter was ${oldState.counter} and now it's ${this.state.counter}`)
+    // this.setState() // INFINITE LOOP
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
