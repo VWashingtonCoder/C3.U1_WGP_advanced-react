@@ -55,7 +55,7 @@ class TheChild extends React.Component {
     console.log('👉 component re-rendered', oldProps, oldState, this.props, this.state)
     console.log(`------> before the re-render, counter was ${oldState.counter} and now it's ${this.state.counter}`)
     // this.setState() // INFINITE LOOP
-    if (this.state.counter == 10) {
+    if (this.state.counter == 10) { // if state is going to change, do it conditionally
       const countTen = new CustomEvent('COUNT_TEN', { detail: this.state })
       document.dispatchEvent(countTen)
     }
