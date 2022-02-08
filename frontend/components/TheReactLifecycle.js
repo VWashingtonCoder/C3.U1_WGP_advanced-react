@@ -34,7 +34,10 @@ class TheChild extends React.Component {
     // on first render, the jsx can only show the initial state (hardcoded)
     // if we need fe to hidrate the component with data from api, we do it here
     document.addEventListener('click', () => console.log('sillyness'))
-    // useEffect(() => axios, [])
+    // useEffect(() => axios, []) kind of equivalent
+  }
+  componentWillUnmount() {
+    console.log('👉 component about to die, last chance for cleanup')
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
