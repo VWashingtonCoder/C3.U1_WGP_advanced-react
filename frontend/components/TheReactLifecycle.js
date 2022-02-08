@@ -29,7 +29,7 @@ class TheChild extends React.Component {
     this.state = { counter: 0, error: '', favToys: [] }
     console.log('👉 constructor function executed')
   }
-  componentDidMount() {
+  componentDidMount() { // use the traditional method syntax
     console.log('👉 component did mount')
   }
   increment = evt => { // eslint-disable-line
@@ -39,7 +39,7 @@ class TheChild extends React.Component {
       counter: state.counter + 1,
     }))
   }
-  render() {
+  render() { // use the traditional method syntax
     console.log('👉 component rendering')
     return (
       <div>
