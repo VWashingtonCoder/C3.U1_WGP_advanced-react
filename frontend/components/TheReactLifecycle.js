@@ -28,7 +28,7 @@ class TheChild extends React.Component {
     super(props)
     this.state = { counter: 0, error: '', favToys: [] }
   }
-  increment = evt => {
+  increment = evt => { // eslint-disable-line
     this.setState((state) => ({
       ...state,
       counter: state.counter + 1,
@@ -38,7 +38,7 @@ class TheChild extends React.Component {
     return (
       <div>
         <h3>The count is {this.state.counter}</h3>
-        <button>increment</button>
+        <button onClick={this.increment}>increment</button>
       </div>
     )
   }
