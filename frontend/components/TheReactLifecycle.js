@@ -3,12 +3,11 @@ import React from 'react'
 export default class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { renderChild: false }
+    this.state = 'FOO'
   }
   toggleChild = evt => {
-    // toggle renderChild
-    this.state.renderChild = !this.state.renderChild
-    this.setState({  })
+    // this.state.renderChild = !this.state.renderChild // NEVAH
+    this.setState('BAR')
   }
   render() {
     return (
