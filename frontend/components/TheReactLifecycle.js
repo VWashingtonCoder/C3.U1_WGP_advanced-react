@@ -61,7 +61,7 @@ class TheChild extends React.Component {
     }
     // componentDidMount and componentWillUnmount IN ONE (HOOKS ONLY)
     // useEffect(() => {
-    //   document.addEventListener('click', silliness)
+    //   something else that might further change component stage
     // }, [foo, bar])
   }
   increment = evt => { // eslint-disable-line
