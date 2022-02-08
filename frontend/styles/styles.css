@@ -26,18 +26,34 @@ body, input, button {
   align-items: center;
 }
 
-h1, h2 {
-  font-size: 2rem;
-  line-height: 5rem;
+h1, h2, h3 {
   color: #93005a;
+
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  line-height: 2rem;
 }
 
 nav {
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav a {
-  line-height: 1.2rem;
+  font-size: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   color: #484848;

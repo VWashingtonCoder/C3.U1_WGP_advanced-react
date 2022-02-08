@@ -11,7 +11,7 @@ import './styles/styles.css'
 render(
   <BrowserRouter>
     <React.StrictMode>
-      <h1>Unit 3.1 - Advanced React</h1>
+      <h1>3.1 - Advanced React</h1>
       <nav>
         <NavLink to="/">Class Components</NavLink>
         <NavLink to="/react-lifecycle">The React Life Cycle</NavLink>
