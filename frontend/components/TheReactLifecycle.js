@@ -41,7 +41,7 @@ class TheChild extends React.Component {
     // react runs this for us
     console.log('👉 component about to die, last chance for cleanup')
     document.removeEventListener('click', this.silliness)
-    // componentDidMount and
+    // componentDidMount and componentWillUnmount IN ONE (HOOKS ONLY)
     // useEffect(() => {
     //   document.addEventListener('click', silliness)
     //   return () => {
