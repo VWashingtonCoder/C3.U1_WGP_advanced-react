@@ -30,13 +30,14 @@ class TheChild extends React.Component {
     console.log('👉 constructor function executed')
   }
   increment = evt => { // eslint-disable-line
-    console.log('👉 constructor function executed')
+    console.log('👉 increment changes component state')
     this.setState((state) => ({
       ...state,
       counter: state.counter + 1,
     }))
   }
   render() {
+    console.log('👉 component rendering')
     return (
       <div>
         <h3>The count is {this.state.counter}</h3>
