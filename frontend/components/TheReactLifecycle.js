@@ -36,6 +36,7 @@ class TheChild extends React.Component {
     // if we need fe to hydrate the component with data from api, we do it here
     document.addEventListener('click', this.silliness)
     // useEffect(() => {}, []) kind of equivalent
+    axios.get().then(set the state)
   }
   componentWillUnmount() {
     // react runs this for us
@@ -59,7 +60,6 @@ class TheChild extends React.Component {
       const countTen = new CustomEvent('COUNT_TEN', { detail: this.state })
       document.dispatchEvent(countTen)
     }
-    // componentDidMount and componentWillUnmount IN ONE (HOOKS ONLY)
     // useEffect(() => {
     //   something else that might further change component stage
     // }, [foo, bar])
