@@ -29,7 +29,7 @@ class TheChild extends React.Component {
     this.state = { counter: 0 }
   }
   increment = evt => {
-    // YOU
+    // YOU! POST IN Q THREAD!
   }
   render() {
     return (
