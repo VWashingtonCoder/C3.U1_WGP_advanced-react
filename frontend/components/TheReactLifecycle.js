@@ -40,6 +40,7 @@ class TheChild extends React.Component {
   componentWillUnmount() {
     // react runs this for us
     console.log('👉 component about to die, last chance for cleanup')
+    document.removeEventListener('click', this.silliness)
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
