@@ -33,7 +33,7 @@ class TheChild extends React.Component {
   componentDidMount() { // use the traditional method syntax
     console.log('👉 component did mount')
     // on first render, the jsx can only show the initial state (hardcoded)
-    // if we need fe to hidrate the component with data from api, we do it here
+    // if we need fe to hydrate the component with data from api, we do it here
     document.addEventListener('click', this.silliness)
     // useEffect(() => axios, []) kind of equivalent
   }
