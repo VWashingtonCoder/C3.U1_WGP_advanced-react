@@ -28,11 +28,11 @@ export default class ClassComponent extends React.Component {
   }
 
   componentDidUpdate(oldprops, oldstate) {
-    // 
-    if () {
-
+    // access to all that is and all it was in the previous render
+    if (true) {
+      // make another ajax call
     }
-   }
+  }
 
   onChange = event => { // use arrow function for custom methods
     const { value, id } = event.target
