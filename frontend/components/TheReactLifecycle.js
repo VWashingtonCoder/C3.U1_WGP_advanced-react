@@ -5,6 +5,7 @@ export default class App extends React.Component {
     super(props)
     this.state = { renderChild: false }
   }
+  toggleChild = 
   render() {
     return (
       <div>
