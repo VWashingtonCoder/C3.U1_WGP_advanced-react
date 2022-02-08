@@ -29,6 +29,9 @@ class TheChild extends React.Component {
     this.state = { counter: 0, error: '', favToys: [] }
     console.log('👉 constructor function executed')
   }
+  componentDidMount() {
+    console.log('👉 component did mount')
+  }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
     this.setState((state) => ({
