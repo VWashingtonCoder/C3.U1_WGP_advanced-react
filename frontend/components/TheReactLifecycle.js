@@ -59,6 +59,10 @@ class TheChild extends React.Component {
       const countTen = new CustomEvent('COUNT_TEN', { detail: this.state })
       document.dispatchEvent(countTen)
     }
+    // componentDidMount and componentWillUnmount IN ONE (HOOKS ONLY)
+    // useEffect(() => {
+    //   document.addEventListener('click', silliness)
+    // }, [foo, bar])
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
