@@ -29,9 +29,9 @@ class TheChild extends React.Component {
     this.state = { counter: 0, error: '', favToys: [] }
   }
   increment = evt => {
-    this.setState((currCount) => ({
-      ...currCount,
-      counter: currCount.counter + 1,
+    this.setState((state) => ({
+      ...state,
+      counter: state.counter + 1,
     }))
   }
   render() {
