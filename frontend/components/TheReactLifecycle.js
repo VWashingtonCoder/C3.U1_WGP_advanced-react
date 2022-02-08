@@ -26,13 +26,13 @@ export default class App extends React.Component {
 class TheChild extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { counter: 0 }
+    this.state = { counter: 0, error: '', favToys: [] }
   }
   increment = evt => {
     this.setState((currCount) => ({
       ...currCount,
       counter: currCount.counter + 1,
-    }));
+    }))
   }
   render() {
     return (
