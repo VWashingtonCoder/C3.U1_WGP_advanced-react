@@ -30,10 +30,10 @@ class TheChild extends React.Component {
     console.log('👉 constructor function executed')
   }
   componentDidMount() { // use the traditional method syntax
-    // useEffect(() => axios, [])
     console.log('👉 component did mount')
     // on first render, the jsx can only show the initial state (hardcoded)
     // if we need fe to hidrate the component with data from api, we do it here
+    // useEffect(() => axios, [])
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
