@@ -37,6 +37,7 @@ class TheChild extends React.Component {
     // useEffect(() => axios, []) kind of equivalent
   }
   componentWillUnmount() {
+    // react runs this for us
     console.log('👉 component about to die, last chance for cleanup')
   }
   increment = evt => { // eslint-disable-line
