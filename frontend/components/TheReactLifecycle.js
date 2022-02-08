@@ -41,7 +41,10 @@ class TheChild extends React.Component {
     // react runs this for us
     console.log('👉 component about to die, last chance for cleanup')
     document.removeEventListener('click', this.silliness)
-    // useEffect(() => {  ... return () => { cleanup }  }, [])
+    useEffect(() => {
+      axios.get()
+      return () => {}
+    }, [])
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
