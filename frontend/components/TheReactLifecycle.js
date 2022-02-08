@@ -9,7 +9,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h2>The React Life Cycle</h2>
-        <button>toggle child</button>
+        <button onClick={this.toggleChild}>toggle child</button>
         {
           this.state.renderChild && <TheChild lady='gaga' />
         }
