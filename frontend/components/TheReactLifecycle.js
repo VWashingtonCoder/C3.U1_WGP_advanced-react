@@ -29,11 +29,12 @@ class TheChild extends React.Component {
     this.state = { counter: 0, error: '', favToys: [] }
     console.log('👉 constructor function executed')
   }
+  silliness = () => console.log('sillyness')
   componentDidMount() { // use the traditional method syntax
     console.log('👉 component did mount')
     // on first render, the jsx can only show the initial state (hardcoded)
     // if we need fe to hidrate the component with data from api, we do it here
-    document.addEventListener('click', () => console.log('sillyness'))
+    document.addEventListener('click', this.silliness)
     // useEffect(() => axios, []) kind of equivalent
   }
   componentWillUnmount() {
@@ -47,7 +48,6 @@ class TheChild extends React.Component {
       counter: state.counter + 1,
     }))
   }
-  silliness = () => console.log('sillyness')
   render() { // use the traditional method syntax
     console.log('👉 component rendering')
     return (
