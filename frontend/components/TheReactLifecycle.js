@@ -36,7 +36,6 @@ class TheChild extends React.Component {
     // if we need fe to hydrate the component with data from api, we do it here
     document.addEventListener('click', this.silliness)
     // useEffect(() => {}, []) kind of equivalent
-    axios.get().then(set the state)
   }
   componentWillUnmount() {
     // react runs this for us
