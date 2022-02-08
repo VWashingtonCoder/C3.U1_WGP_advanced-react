@@ -29,7 +29,10 @@ class TheChild extends React.Component {
     this.state = { counter: 0 }
   }
   increment = evt => {
-    // YOU! POST IN Q THREAD!
+    this.setState((currCount) => ({
+      ...currCount,
+      counter: currCount.counter + 1,
+    }));
   }
   render() {
     return (
