@@ -56,7 +56,8 @@ class TheChild extends React.Component {
     console.log(`------> before the re-render, counter was ${oldState.counter} and now it's ${this.state.counter}`)
     // this.setState() // INFINITE LOOP
     if (this.state.counter == 10) {
-      const countTen = new CustomEvent('COUNT_TEN', { detail:  })
+      const countTen = new CustomEvent('COUNT_TEN', { detail: this.state })
+      document.di
     }
   }
   increment = evt => { // eslint-disable-line
