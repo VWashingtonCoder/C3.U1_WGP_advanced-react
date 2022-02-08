@@ -47,6 +47,7 @@ class TheChild extends React.Component {
       counter: state.counter + 1,
     }))
   }
+  silliness = () => console.log('sillyness')
   render() { // use the traditional method syntax
     console.log('👉 component rendering')
     return (
