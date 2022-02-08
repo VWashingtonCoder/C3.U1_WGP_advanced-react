@@ -28,6 +28,9 @@ class TheChild extends React.Component {
     super(props)
     this.state = { counter: 0 }
   }
+  increment = evt => {
+    // YOU
+  }
   render() {
     return (
       <div>
