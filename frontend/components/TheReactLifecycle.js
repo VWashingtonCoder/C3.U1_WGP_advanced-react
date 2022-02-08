@@ -7,7 +7,7 @@ export default class App extends React.Component {
   }
   toggleChild = evt => {
     // this.state.renderChild = !this.state.renderChild // NEVAH
-    this.setState(this.state)
+    this.setState({ ...this.state,  })
   }
   render() {
     return (
