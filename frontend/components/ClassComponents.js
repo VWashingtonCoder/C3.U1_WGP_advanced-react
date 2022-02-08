@@ -27,6 +27,13 @@ export default class ClassComponent extends React.Component {
       .catch(this.onError)
   }
 
+  componentDidUpdate(oldprops, oldstate) {
+    // 
+    if () {
+
+    }
+   }
+
   onChange = event => { // use arrow function for custom methods
     const { value, id } = event.target
     this.setState({ ...this.state, [id]: value })
