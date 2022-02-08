@@ -52,7 +52,8 @@ class TheChild extends React.Component {
   componentDidUpdate(oldProps, oldState) {
     // chance to look at current state and props, and decide to trigger
     // further state changes (axios calls etc) based on that
-    console.log('👉 component re-rendered')
+    console.log('👉 component re-rendered', oldProps, oldState, this.props, this.state)
+    console.log(``)
   }
   increment = evt => { // eslint-disable-line
     console.log('👉 increment changes component state')
