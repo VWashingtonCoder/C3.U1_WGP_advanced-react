@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function useQuotes() {
   const [quotes, setQuotes] = useState([])
-  axios.get('http://localhost:9000/api/quotes')
-    .then(res => {
-      setQuotes(res.data)
-    })
-    .catch(err => {
-      debugger
-    })
+  useEffect(() => {
+    axios.get('http://localhost:9000/api/quotes')
+      .then(res => {
+        setQuotes(res.data)
+      })
+      .catch(err => {
+        debugger
+      })
+  }, [])
   return quotes
 }
 
