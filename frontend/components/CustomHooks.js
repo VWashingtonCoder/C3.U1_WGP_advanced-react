@@ -44,7 +44,7 @@ export default function App() {
       <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
       <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
       {
-        quotes.map(q => q.text)
+        // quotes.map(q => q.text)
       }
     </form>
   )
