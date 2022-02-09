@@ -21,7 +21,7 @@ function useForm(...inputNames) {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     let initialState = {}
     inputNames.forEach(name => {
-      
+      initialState[name] = window.localStorage.getItem(name) || ''
     })
   })
   const onChange = evt => {
