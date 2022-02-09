@@ -1,3 +1,6 @@
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
 const URL = 'http://localhost:9000/api/quotes'
 
 function useQuotes() {
