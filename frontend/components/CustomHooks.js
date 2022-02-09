@@ -53,7 +53,7 @@ function useStateLS(key, initialValue) {
 
 export default function App() {
   const [form, onChange] = useForm('foo', 'bar', 'baz')
-  const [data, setData] = useStateLS('fruits', ['apple', 'orange'])
+  const [fruits, setFruits] = useStateLS('fruits', ['apple', 'orange'])
   const quotes = useQuotes()
 
   return (
