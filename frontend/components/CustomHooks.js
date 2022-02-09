@@ -36,8 +36,8 @@ function useForm(...inputNames) {
 function useStateLS(key, initialValue) {
   const [value, setValue] = useState(() => {
     // if ls has the value under key, initialize to that otherwise initialize to initialValue
-    if (window.l) {
-
+    if (window.localStorage.getItem(key)) {
+      
     }
   })
 }
