@@ -11,8 +11,8 @@ export default function App() {
   return (
     <form>
       <h2>Custom Hooks</h2>
-      <input  name="foo" placeholder="type foo" />
-      <input name="bar" placeholder="type bar" />
+      <input onChange={onChange} name="foo" placeholder="type foo" />
+      <input onChange={onChange} name="bar" placeholder="type bar" />
     </form>
   )
 }
