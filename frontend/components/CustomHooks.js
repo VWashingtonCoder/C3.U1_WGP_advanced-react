@@ -6,7 +6,8 @@ export default function App() {
     bar: '',
   })
   const onChange = evt => {
-    const {} = evt.target
+    const { name, value } = evt.target
+    setState
   }
   return (
     <form>
