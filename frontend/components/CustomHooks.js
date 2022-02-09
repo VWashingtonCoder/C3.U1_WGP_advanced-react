@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
+const URL = 'http://localhost:9000/api/quotes'
+
 function useQuotes() {
   const [quotes, setQuotes] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:9000/api/quotes')
+    axios.get(URL)
       .then(res => {
-        setQuotes(res.data)
+        setQuotes(res.data.quotes)
       })
       .catch(err => {
         debugger
