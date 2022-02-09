@@ -53,7 +53,10 @@ function useStateLS(key, initialValue) {
 
 function useFormImproved(key, formValues) {
   const [form, setForm] = useStateLS(key, formValues)
-  
+  const onChange = evt => {
+    
+  }
+  return [form, onChange]
 }
 
 export default function App() {
