@@ -43,7 +43,7 @@ function useStateLS(key, initialValue) {
     setIt(initialValue)
     return initialValue
   })
-  const setValueLS = (newValue) => {
+  const setValueLS = newValue => {
     setIt(newValue)
     setValue(newValue)
   }
