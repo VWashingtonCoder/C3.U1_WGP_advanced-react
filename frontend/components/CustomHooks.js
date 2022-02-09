@@ -26,6 +26,7 @@ function useForm() {
 
 export default function App() {
   const [form, onChange] = useForm()
+  const quotes = useQuotes()
   return (
     <form>
       <h2>Custom Hooks</h2>
