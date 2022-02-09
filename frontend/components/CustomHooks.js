@@ -6,7 +6,7 @@ export default function App() {
     bar: '',
   })
   const onChange = evt => {
-    debugger
+    const {} = evt.target
   }
   return (
     <form>
