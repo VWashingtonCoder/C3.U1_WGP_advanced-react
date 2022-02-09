@@ -52,7 +52,7 @@ function useStateLS(key, initialValue) {
 }
 
 function useFormImproved(key, formValues) {
-  
+  const [form, setForm] = useStateLS(key)
 }
 
 export default function App() {
