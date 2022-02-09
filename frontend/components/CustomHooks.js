@@ -33,6 +33,10 @@ function useForm(...inputNames) {
   return [form, onChange]
 }
 
+function useStateLS(initialState) {
+
+}
+
 export default function App() {
   const [form, onChange] = useForm('foo', 'bar', 'baz')
   const [data, setData] = useStateLS(['apple', 'orange'])
