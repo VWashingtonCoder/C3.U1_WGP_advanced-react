@@ -13,7 +13,7 @@ export default function App() {
     } else {
       initialState.bar = ''
     }
-    
+    return initialState
   })
 
   const onChange = evt => {
