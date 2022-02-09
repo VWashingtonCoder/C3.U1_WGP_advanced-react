@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 export default function App() {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     let initialState = {}
+    const foo = window.localStorage.getItem('foo') || 
     if (window.localStorage.getItem('foo')) {
       initialState.foo = window.localStorage.getItem('foo')
     } else {
