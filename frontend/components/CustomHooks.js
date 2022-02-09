@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 export default function App() {
   const [form, setForm] = useState(() => {
-    
+    let initialState = {}
     if (window.localStorage.getItem('foo')) {
-
+      
     }
   })
 
