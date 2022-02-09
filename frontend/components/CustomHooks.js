@@ -7,6 +7,9 @@ function useQuotes() {
     .then(res => {
       setQuotes(res.data)
     })
+    .catch(err => {
+      debugger
+    })
   return quotes
 }
 
