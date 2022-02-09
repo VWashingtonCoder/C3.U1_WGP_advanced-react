@@ -17,7 +17,7 @@ export function useQuotes() {
   return quotes
 }
 
-function useForm(...inputNames) {
+export function useForm(...inputNames) {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     let initialState = {}
     inputNames.forEach(name => {
@@ -33,7 +33,7 @@ function useForm(...inputNames) {
   return [form, onChange]
 }
 
-function useStateLS(key, initialValue) {
+export function useStateLS(key, initialValue) {
   const setIt = val => window.localStorage.setItem(key, JSON.stringify(val))
   const [value, setValue] = useState(() => {
     const item = window.localStorage.getItem(key)
@@ -51,18 +51,11 @@ function useStateLS(key, initialValue) {
   return [value, setValueLS]
 }
 
-function useFormImproved(key, formValues) {
+export function useFormImproved(key, formValues) {
   const [form, setForm] = useStateLS(key, formValues)
   const onChange = evt => {
     const { name, value } = evt.target
     setForm({ ...form, [name]: value })
   }
   return [form, onChange]
-}
-
-export default {
-  useQuotes,
-  useFormImproved,
-  useForm,
-  useStateLS,
 }
