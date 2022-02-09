@@ -11,7 +11,7 @@ function useForm() {
     window.localStorage.setItem(name, value)
     setForm({ ...form, [name]: value })
   }
-  return []
+  return [form, onChange]
 }
 
 export default function App() {
