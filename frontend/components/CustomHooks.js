@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function App() {
-  const [form, setForm] = useState('')
+  const [form, setForm] = useState({  })
   return (
     <form>
       <h2>Custom Hooks</h2>
