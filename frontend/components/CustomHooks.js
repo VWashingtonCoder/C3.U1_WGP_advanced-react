@@ -7,7 +7,7 @@ export default function App() {
   })
   const onChange = evt => {
     const { name, value } = evt.target
-    setForm({ ...form,  })
+    setForm({ ...form, [name]: value })
   }
   return (
     <form>
