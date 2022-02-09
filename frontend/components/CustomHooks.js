@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+function use
+
 export default function App() {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     const foo = window.localStorage.getItem('foo') || ''
