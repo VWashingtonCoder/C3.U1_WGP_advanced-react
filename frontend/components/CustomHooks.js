@@ -42,8 +42,8 @@ function useStateLS(key, initialValue) {
     window.localStorage.setItem(key, JSON.stringify(initialValue))
     return initialValue
   })
-  const setValueLS = () => {
-    
+  const setValueLS = (newValue) => {
+    window.localStorage.setItem(key, JSON.stringify(newValue))
   }
   // we need a better setValue that actually stores to LS
   return [value, setValueLS]
