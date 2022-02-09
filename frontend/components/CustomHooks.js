@@ -74,7 +74,7 @@ export default function App() {
       <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
       {
         // quotes.map(q => q.text)
-        data.map(fr => fr)
+        // data.map(fr => fr)
       }
     </form>
   )
