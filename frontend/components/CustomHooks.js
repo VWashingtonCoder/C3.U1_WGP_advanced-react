@@ -34,8 +34,8 @@ function useForm(...inputNames) {
 }
 
 function useStateLS(key, initialValue) {
+  const setIt = val => window.localStorage.setItem(key, JSON.stringify(val))
   const [value, setValue] = useState(() => {
-    const setIt = val => window.localStorage.setItem(key, JSON.stringify(val))
     const item = window.localStorage.getItem(key)
     if (item) {
       return JSON.parse(item)
@@ -44,7 +44,7 @@ function useStateLS(key, initialValue) {
     return initialValue
   })
   const setValueLS = (newValue) => {
-    setItnewValue))
+    setIt(newValue)
     setValue(newValue)
   }
   // we need a better setValue that actually stores to LS
