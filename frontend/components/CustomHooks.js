@@ -51,6 +51,10 @@ function useStateLS(key, initialValue) {
   return [value, setValueLS]
 }
 
+function useFormImproved(key, formValue) {
+  
+}
+
 export default function App() {
   // const [form, onChange] = useForm('foo', 'bar', 'baz')
   const [form, onChange] = useFormImproved('theform', { foo: '', bar: '', baz: '' })
