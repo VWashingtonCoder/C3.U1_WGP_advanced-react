@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 export default function App() {
   const [form, setForm] = useState(() => {
     
+    if (window.localStorage.getItem('foo')) {
+
+    }
   })
 
   const onChange = evt => {
