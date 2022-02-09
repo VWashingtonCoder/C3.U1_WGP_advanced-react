@@ -64,5 +64,5 @@ export default {
   useQuotes,
   useFormImproved,
   useForm,
-  useStateLS
+  useStateLS,
 }

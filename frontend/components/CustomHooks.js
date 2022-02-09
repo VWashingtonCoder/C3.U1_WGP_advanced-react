@@ -2,7 +2,7 @@ import React from 'react'
 import {
   useQuotes,
   useFormImproved,
-  useStateLS
+  useStateLS,
 } from './custom'
 
 export default function App() {
