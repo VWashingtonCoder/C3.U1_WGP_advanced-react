@@ -34,7 +34,7 @@ function useForm(...inputNames) {
 }
 
 function useStateLS(key, initialState) {
-  
+  const [value, setValue] = useState(initialState)
 }
 
 export default function App() {
