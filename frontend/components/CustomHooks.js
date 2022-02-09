@@ -19,8 +19,9 @@ function useQuotes() {
 
 function useForm(...inputNames) {
   const [form, setForm] = useState(() => { // callback that returns the initial state
-    const foo = window.localStorage.getItem('foo') || ''
-    const bar = window.localStorage.getItem('bar') || ''
+    const foo = window.localStorage.getItem(inputNames[0]) || ''
+    const bar = window.localStorage.getItem(inputNames[1]) || ''
+    const baz = window.localStorage.getItem(inputNames[2]) || ''
     return { foo, bar }
   })
   const onChange = evt => {
