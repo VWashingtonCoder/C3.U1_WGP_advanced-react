@@ -35,15 +35,16 @@ function useForm(...inputNames) {
 
 function useStateLS(key, initialValue) {
   const [value, setValue] = useState(() => {
+    const setIt = val => window.localStorage.setItem(key, JSON.stringify(val))
     const item = window.localStorage.getItem(key)
     if (item) {
       return JSON.parse(item)
     }
-    window.localStorage.setItem(key, JSON.stringify(initialValue))
+    setIt(initialValue)
     return initialValue
   })
   const setValueLS = (newValue) => {
-    window.localStorage.setItem(key, JSON.stringify(newValue))
+    setItnewValue))
     setValue(newValue)
   }
   // we need a better setValue that actually stores to LS
