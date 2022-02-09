@@ -35,7 +35,7 @@ function useForm(...inputNames) {
 
 export default function App() {
   const [form, onChange] = useForm('foo', 'bar', 'baz')
-  const [data, setData] = useStateL()
+  const [data, setData] = useStateLS([''])
   const quotes = useQuotes()
 
   return (
