@@ -5,8 +5,9 @@ function useQuotes() {
   const [quotes, setQuotes] = useState([])
   axios.get('http://localhost:9000/api/quotes')
     .then(res => {
-      
+      setQuotes(res.data)
     })
+  return quotes
 }
 
 function useForm() {
