@@ -33,9 +33,10 @@ function useForm(...inputNames) {
   return [form, onChange]
 }
 
-function useStateLS(key, initialState) {
+function useStateLS(key, initialValue) {
   const [value, setValue] = useState(() => {
-    // 
+    // if ls has the value under key, initialize to that otherwise initialize to initialValue
+    
   })
 }
 
