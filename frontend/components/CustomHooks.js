@@ -18,6 +18,7 @@ export default function App() {
 
   const onChange = evt => {
     const { name, value } = evt.target
+    window.localStorage.setItem(name, )
     setForm({ ...form, [name]: value })
   }
   return (
