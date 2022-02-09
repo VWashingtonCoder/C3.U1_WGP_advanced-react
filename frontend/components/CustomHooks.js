@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 
 export default function App() {
   const [form, setForm] = useState(() => { // callback that returns the initial state
-    let initialState = {}
     const foo = window.localStorage.getItem('foo') || ''
     const bar = window.localStorage.getItem('bar') || ''
-    return initialState
+    return { foo, bar }
   })
 
   const onChange = evt => {
