@@ -23,6 +23,7 @@ function useForm(...inputNames) {
     inputNames.forEach(name => {
       initialState[name] = window.localStorage.getItem(name) || ''
     })
+    return initialState
   })
   const onChange = evt => {
     const { name, value } = evt.target
