@@ -17,7 +17,7 @@ function useQuotes() {
   return quotes
 }
 
-function useForm() {
+function useForm(...inputNames) {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     const foo = window.localStorage.getItem('foo') || ''
     const bar = window.localStorage.getItem('bar') || ''
@@ -32,7 +32,7 @@ function useForm() {
 }
 
 export default function App() {
-  const [form, onChange] = useForm('foo')
+  const [form, onChange] = useForm('foo', 'bar', 'baz')
   const quotes = useQuotes()
 
   return (
