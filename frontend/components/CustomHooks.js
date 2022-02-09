@@ -11,10 +11,11 @@ function useForm() {
     window.localStorage.setItem(name, value)
     setForm({ ...form, [name]: value })
   }
+  return []
 }
 
 export default function App() {
-  const [form, setForm] = useForm()
+  const [form, onChange] = useForm()
   return (
     <form>
       <h2>Custom Hooks</h2>
