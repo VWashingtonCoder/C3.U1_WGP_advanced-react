@@ -8,11 +8,12 @@ export default function App() {
     } else {
       initialState.foo = ''
     }
-    if (window.localStorage.getItem('foo')) {
-      initialState.foo = window.localStorage.getItem('foo')
+    if (window.localStorage.getItem('bar')) {
+      initialState.bar = window.localStorage.getItem('bar')
     } else {
-      initialState.foo = ''
+      initialState.bar = ''
     }
+    
   })
 
   const onChange = evt => {
