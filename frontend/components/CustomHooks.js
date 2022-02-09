@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
-function use
-
-export default function App() {
+function useForm() {
   const [form, setForm] = useState(() => { // callback that returns the initial state
     const foo = window.localStorage.getItem('foo') || ''
     const bar = window.localStorage.getItem('bar') || ''
@@ -13,6 +11,9 @@ export default function App() {
     window.localStorage.setItem(name, value)
     setForm({ ...form, [name]: value })
   }
+}
+
+export default function App() {
   return (
     <form>
       <h2>Custom Hooks</h2>
