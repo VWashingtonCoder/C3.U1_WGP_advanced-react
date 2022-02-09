@@ -4,7 +4,14 @@ export default function App() {
   const [form, setForm] = useState(() => {
     let initialState = {}
     if (window.localStorage.getItem('foo')) {
-      
+      initialState.foo = window.localStorage.getItem('foo')
+    } else {
+      initialState.foo = ''
+    }
+    if (window.localStorage.getItem('foo')) {
+      initialState.foo = window.localStorage.getItem('foo')
+    } else {
+      initialState.foo = ''
     }
   })
 
