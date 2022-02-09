@@ -55,7 +55,7 @@ function useFormImproved(key, formValues) {
   const [form, setForm] = useStateLS(key, formValues)
   const onChange = evt => {
     const { name, value } = evt.target
-    
+    setForm({ ...form, [name]: value })
   }
   return [form, onChange]
 }
