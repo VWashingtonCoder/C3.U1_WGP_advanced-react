@@ -6,7 +6,6 @@ export default function App() {
     const bar = window.localStorage.getItem('bar') || ''
     return { foo, bar }
   })
-
   const onChange = evt => {
     const { name, value } = evt.target
     window.localStorage.setItem(name, value)
