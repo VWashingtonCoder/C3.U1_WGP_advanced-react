@@ -42,6 +42,8 @@ function useStateLS(key, initialValue) {
     window.localStorage.setItem(key, JSON.stringify(initialValue))
     return initialValue
   })
+
+  return [value, set]
 }
 
 export default function App() {
