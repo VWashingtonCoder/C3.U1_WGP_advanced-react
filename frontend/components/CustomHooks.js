@@ -35,8 +35,9 @@ function useForm(...inputNames) {
 
 function useStateLS(key, initialValue) {
   const [value, setValue] = useState(() => {
-    if (window.localStorage.getItem(key)) {
-      return JSON.parse(window.localStorage.getItem(key))
+    const item = window.localStorage.getItem(key)
+    if (item) {
+      return JSON.parse(item)
     }
     window.localStorage.setItem(key, JSON.stringify(initialValue))
     return initialValue
