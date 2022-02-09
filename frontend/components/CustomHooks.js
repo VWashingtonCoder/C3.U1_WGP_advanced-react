@@ -14,6 +14,7 @@ function useForm() {
 }
 
 export default function App() {
+  const [form, setForm] = useForm()
   return (
     <form>
       <h2>Custom Hooks</h2>
