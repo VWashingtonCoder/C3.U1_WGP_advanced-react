@@ -39,7 +39,7 @@ function useStateLS(key, initialValue) {
     if (window.localStorage.getItem(key)) {
       return JSON.parse(window.localStorage.getItem(key))
     }
-    window.localStorage.setItem(key, value)
+    window.localStorage.setItem(key, JSON.stringify(initialValue))
   })
 }
 
