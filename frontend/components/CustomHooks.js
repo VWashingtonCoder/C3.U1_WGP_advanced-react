@@ -32,13 +32,14 @@ function useForm() {
 export default function App() {
   const [form, onChange] = useForm()
   const quotes = useQuotes()
+  debugger
   return (
     <form>
       <h2>Custom Hooks</h2>
       <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
       <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
       {
-        quotes.map && quotes.map(q => q.text)
+        quotes.map(q => q.text)
       }
     </form>
   )
