@@ -21,12 +21,12 @@ export default class App extends React.Component {
     evt.preventDefault()
     this.setState({
       ...this.state,
+      input: '',
       todos: this.state.todos.concat({
         id: getId(),
         name: this.state.input,
         completed: false,
       }),
-      input: ''
     })
   }
 
@@ -41,7 +41,7 @@ export default class App extends React.Component {
   toggleShouldShow = () => {
     this.setState({
       ...this.state,
-      showCompleteds: !this.state.showCompleteds
+      showCompleteds: !this.state.showCompleteds,
     })
   }
 
@@ -60,7 +60,7 @@ export default class App extends React.Component {
     return (
       <div>
         <div id="todoList">
-          <h2>Todos:</h2>
+          <h2 data-testid='todoListHeading'>Todos:</h2>
           {
             this.state.todos.reduce((acc, td) => {
               if (this.state.showCompleteds || !td.completed) return acc.concat(
