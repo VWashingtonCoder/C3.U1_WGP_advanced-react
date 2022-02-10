@@ -50,6 +50,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin: 0 0 1rem 0;
 }
 
 nav a {
@@ -68,6 +69,14 @@ nav a.active {
   margin: 1rem 0 1rem 0;
 }
 
-ul {
+ul, form {
   margin: 1rem 0 2rem 0;
+}
+
+.todo {
+  padding: 0.15rem;
+}
+
+.todo:hover {
+  cursor: pointer;
 }
