@@ -47,7 +47,6 @@ export function useStateLS(key, initialValue) {
     setIt(newValue)
     setValue(newValue)
   }
-  // we need a better setValue that actually stores to LS
   return [value, setValueLS]
 }
 
