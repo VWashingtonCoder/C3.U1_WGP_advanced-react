@@ -19,7 +19,7 @@ render(
         <NavLink to="/testing-react">Testing React</NavLink>
       </nav>
       <Routes>
-        <Route path="/" element={<ClassComponents />} />
+        <Route path="/" element={<ClassComponents foo='bar' />} />
         <Route path="/react-lifecycle" element={<TheReactLifecycle />} />
         <Route path="/custom-hooks" element={<CustomHooks />} />
         <Route path="/testing-react" element={<TestingReact />} />
