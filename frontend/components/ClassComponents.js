@@ -35,7 +35,7 @@ export default class Quotes extends React.Component {
   }
 
   capitalizeAuthor = id => {
-    
+    console.log('capitalizeAuthor', id)
   }
 
   changeInput = (key, value) => {
