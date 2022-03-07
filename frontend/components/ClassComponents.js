@@ -53,7 +53,8 @@ export default class Quotes extends React.Component {
   }
 
   addQuote = () => {
-    this.setState({ ...this.state, quotes: [...quotes] })
+    const { quotes } = this.state
+    this.setState({ ...this.state, quotes: [...quotes, ] })
   }
 
   render() { // traditional method syntax for functions that come with React
