@@ -15,8 +15,8 @@ const initialState = {
   errorMessage: '',
   quotes,
   form: {
-    text: '',
-    author: '',
+    textInput: '',
+    authorInput: '',
   }
 }
 
@@ -45,7 +45,7 @@ export default class Quotes extends React.Component {
   }
 
   changeInput = (key, value) => {
-    
+
   }
 
   addQuote = () => {
