@@ -54,11 +54,18 @@ export default class Quotes extends React.Component {
 
   addQuote = () => {
     const { quotes } = this.state
-    this.setState({ ...this.state, quotes: [...quotes, {
-      id: getIdx(),
-      text: this.state.form.textInput,
-      author: this.state.form.authorInput,
-    } ] })
+    const 
+    this.setState({
+      ...this.state,
+      quotes: [
+        ...quotes,
+        {
+          id: getIdx(),
+          text: this.state.form.textInput,
+          author: this.state.form.authorInput,
+        },
+      ]
+    })
   }
 
   render() { // traditional method syntax for functions that come with React
