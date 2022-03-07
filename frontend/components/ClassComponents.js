@@ -42,6 +42,10 @@ export default class Quotes extends React.Component {
 
   }
 
+  addQuote = () => {
+
+  }
+
   render() { // traditional method syntax for functions that come with React
     console.log('props are', this.props)
     console.log('state is', this.state)
