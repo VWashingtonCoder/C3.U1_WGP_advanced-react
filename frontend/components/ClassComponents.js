@@ -49,7 +49,7 @@ export default class Quotes extends React.Component {
   }
 
   addQuote = () => {
-
+    this.s
   }
 
   render() { // traditional method syntax for functions that come with React
