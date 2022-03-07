@@ -36,7 +36,9 @@ export default class Quotes extends React.Component {
 
   capitalizeAuthor = id => {
     this.setState({
-      ...this.state, 
+      ...this.state, quotes: this.state.quotes.map(quote => {
+        return ?????
+      })
     })
   }
 
