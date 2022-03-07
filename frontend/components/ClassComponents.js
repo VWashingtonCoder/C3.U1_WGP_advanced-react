@@ -56,8 +56,8 @@ export default class Quotes extends React.Component {
     const { quotes } = this.state
     this.setState({ ...this.state, quotes: [...quotes, {
       id: getIdx(),
-      text: 
-      author:
+      text: this.state.form.textInput,
+      author: this.state.form.authorInput,
     } ] })
   }
 
