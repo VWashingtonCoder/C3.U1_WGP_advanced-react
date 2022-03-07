@@ -5,7 +5,7 @@ let idx = 0
 const getIdx = () => ++idx
 
 const quotes = [
-  { id: 1,  },
+  { id: getIdx(), author: 'Gabe'},
 ]
 
 export default class Quotes extends React.Component {
