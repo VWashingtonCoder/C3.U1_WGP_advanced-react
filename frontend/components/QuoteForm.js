@@ -3,8 +3,8 @@ import React from 'react'
 export default class QuoteForm extends React.Component {
   onSubmit = evt => {
     evt.preventDefault()
-    console.log('submitting!')
     // also needs machinery from above to add a new quote
+    this.props.onSubmit()
   }
 
   onChange = evt => {

@@ -15,8 +15,8 @@ const initialState = {
   errorMessage: '',
   quotes,
   form: {
-    textInput: 'foo',
-    authorInput: 'bar',
+    textInput: '',
+    authorInput: '',
   }
 }
 
