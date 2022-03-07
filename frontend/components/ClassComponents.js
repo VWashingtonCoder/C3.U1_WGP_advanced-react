@@ -39,7 +39,9 @@ export default class Quotes extends React.Component {
         <h2>Quotes: {foo}</h2>
         <ul>
           {
-            quotes.map(() => {})
+            quotes.map((quote) => {
+              
+            })
           }
         </ul>
         <Form />
