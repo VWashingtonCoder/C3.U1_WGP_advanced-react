@@ -23,6 +23,7 @@ export default class QuoteForm extends React.Component {
           placeholder="type text"
         />
         <input
+          value={values.authorInput}
           onChange={this.onChange}
           type="text"
           id="authorInput"

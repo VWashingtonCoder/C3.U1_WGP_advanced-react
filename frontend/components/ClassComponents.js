@@ -76,7 +76,7 @@ export default class Quotes extends React.Component {
             })
           }
         </ul>
-        <Form />
+        <Form values={} />
       </div>
     )
   }
