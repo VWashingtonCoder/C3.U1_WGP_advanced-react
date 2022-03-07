@@ -2,98 +2,13 @@ import React from 'react'
 import axios from 'axios'
 import Form from './QuoteForm'
 
-const initialState = {
-  quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
-  error: 'No error, everything is cool!',
-  textInput: '',
-  authorInput: '',
-}
-const URL = 'http://localhost:9000/api/quotes'
-
-export default class ClassComponent extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = initialState
-  //   this.onChange = this.onChange.bind(this)
-  // }
-  state = initialState
-
-  componentDidMount() { // no arrow func!!
-    axios.get(URL)
-      .then(res => {
-        console.log(res) // res.data.quotes // is where the list of quotes
-        this.setState({ ...this.state, quotes: res.data.quotes })
-      })
-      .catch(this.onError)
-  }
-
-  componentDidUpdate(oldprops, oldstate) {
-    // access to all that is and all that was in the previous render
-    // if (some condition) {
-    //   make another ajax call
-    // }
-  }
-
-  onChange = event => { // use arrow function for custom methods
-    const { value, id } = event.target
-    this.setState({ ...this.state, [id]: value })
-  }
-
-  onSubmit = event => {
-    event.preventDefault()
-    const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
-    axios.post(URL, payloadToSend)
-      .then(res => {
-        // adapt this to the endpoint at hand!!!!!!!
-        this.setState({ ...this.state, quotes: res.data.quotes }) // do not copy & paste this code
-      })
-      .catch(err => {
-        // you could use this.onError (see onDelete and componentDidMount)
-        const errorFromAPI = err.response.data.message
-        this.setState({ ...this.state, error: errorFromAPI })
-      })
-  }
-
-  onError = err => {
-    const errorFromAPI = err.response.data.message
-    this.setState({ ...this.state, error: errorFromAPI })
-  }
-
-  onDelete = id => event => { // eslint-disable-line
-    axios.delete(`${URL}/${id}`)
-      .then(res => { // eslint-disable-line
-        // we could hit axios.get() but we are just going to do fe surgery
-        this.setState({
-          ...this.state,
-          quotes: this.state.quotes.filter(qo => {
-            return qo.id !== id
-          })
-        })
-      })
-      .catch(this.onError)
-  }
-
-  render() {  // no arrow func!!
-    console.log('THE STATE ---> ', this.state)
-    return (
-      <div>
-        <h2>It is working</h2>
-        <div id="error">Error: {this.state.error}</div>
-        <div>Quotes:</div>
-        <ul>
-          {
-            this.state.quotes.map(qo => (
-              <li key={qo.id}>{qo.author} sayz {qo.text} <button onClick={this.onDelete(qo.id)}>del</button></li>
-            ))
-          }
-        </ul>
-        <Form
-          onSubmit={this.onSubmit}
-          onChange={this.onChange}
-          textInput={this.state.textInput}
-          authorInput={this.state.authorInput}
-        />
-      </div>
-    )
-  }
+export default function Quotes(props) {
+  return (
+    <div>
+      <h2>It is working</h2>
+      <div>Quotes:</div>
+      <ul></ul>
+      <Form />
+    </div>
+  )
 }
