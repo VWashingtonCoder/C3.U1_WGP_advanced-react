@@ -35,7 +35,7 @@ export default class Quotes extends React.Component {
   }
 
   capitalizeAuthor = id => {
-
+    
   }
 
   changeInput = (key, value) => {
@@ -64,7 +64,7 @@ export default class Quotes extends React.Component {
                 <li className='qt' key={id}>
                   {author} says {text}
                   <button onClick={evt => this.destroy(id)}>del</button>
-                  <button>capitalize!</button>
+                  <button onClick={evt => this.capitalizeAuthor(id)}>capitalize!</button>
                 </li>
               )
             })
