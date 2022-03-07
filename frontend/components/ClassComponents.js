@@ -35,7 +35,9 @@ export default class Quotes extends React.Component {
       <div>
         <h2>Quotes: {this.props.foo}</h2>
         <ul>
-
+          {
+            
+          }
         </ul>
         <Form />
       </div>
