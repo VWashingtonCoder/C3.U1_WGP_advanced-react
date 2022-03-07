@@ -6,7 +6,8 @@ const getIdx = () => ++idx
 
 const quotes = [
   { id: getIdx(), author: 'Gabe', text: 'have fun with this' },
-  { id: getIdx(), author: 'Gabe', text: 'have fun with this' },
+  { id: getIdx(), author: 'Paul', text: 'use Postman' },
+  { id: getIdx(), author: 'Anne', text: 'test your endpoints' },
 ]
 
 export default class Quotes extends React.Component {
