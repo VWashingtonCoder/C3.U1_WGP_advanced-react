@@ -21,10 +21,10 @@ const initialState = {
 }
 
 export default class Quotes extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = initialState
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = initialState
+  // }
   state = initialState
 
   render() {
