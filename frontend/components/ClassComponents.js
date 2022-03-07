@@ -53,7 +53,7 @@ export default class Quotes extends React.Component {
   }
 
   addQuote = () => {
-    this.setState({ ...this.state, })
+    this.setState({ ...this.state, quotes: ???? })
   }
 
   render() { // traditional method syntax for functions that come with React
@@ -80,7 +80,7 @@ export default class Quotes extends React.Component {
             })
           }
         </ul>
-        <Form onChange={this.changeInput} values={form} onSubmit={??????} />
+        <Form onChange={this.changeInput} values={form} onSubmit={this.addQuote} />
       </div>
     )
   }
