@@ -28,7 +28,7 @@ export default class Quotes extends React.Component {
   state = initialState
 
   destroy = evt => {
-    
+    console.log('state', this.state)
     console.log('clicking!')
   }
 
