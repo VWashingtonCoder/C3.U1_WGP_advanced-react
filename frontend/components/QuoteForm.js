@@ -12,9 +12,11 @@ export default class QuoteForm extends React.Component {
   }
 
   render() {
+    const { values } = this.props
     return (
       <form onSubmit={this.onSubmit}>
         <input
+          value={values.textInput}
           onChange={this.onChange}
           type="text"
           id="textInput"
