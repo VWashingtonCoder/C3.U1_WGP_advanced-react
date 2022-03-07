@@ -12,7 +12,11 @@ const quotes = [
 
 const initialState = {
   // other slices of state
+  errorMessage: '',
   quotes,
+  form: {
+    
+  }
 }
 
 export default class Quotes extends React.Component {
