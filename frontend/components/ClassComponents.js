@@ -35,6 +35,7 @@ export default class Quotes extends React.Component {
   }
 
   capitalizeAuthor = id => {
+    // state changing machinery lives where state lives
     this.setState({
       ...this.state, quotes: this.state.quotes.map(quote => {
         return quote.id === id

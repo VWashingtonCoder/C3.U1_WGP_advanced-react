@@ -8,6 +8,7 @@ export default class QuoteForm extends React.Component {
 
   onChange = evt => {
     const { value, id } = evt.target
+    // I need state changing machinery from above
     this.props.onChange(id, value)
   }
 
