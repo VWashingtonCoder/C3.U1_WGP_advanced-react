@@ -10,6 +10,11 @@ const quotes = [
   { id: getIdx(), author: 'Anne', text: 'test your endpoints' },
 ]
 
+const initialState = {
+  // stuff
+  quotes,
+}
+
 export default class Quotes extends React.Component {
   render() {
     return (
