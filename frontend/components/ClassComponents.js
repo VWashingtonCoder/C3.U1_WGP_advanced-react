@@ -38,7 +38,9 @@ export default class Quotes extends React.Component {
 
   }
 
-  
+  changeInput = (key, value) => {
+
+  }
 
   render() { // traditional method syntax for functions that come with React
     console.log('props are', this.props)
