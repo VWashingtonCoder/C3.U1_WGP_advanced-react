@@ -6,7 +6,7 @@ export default class QuoteForm extends React.Component {
   }
 
   onChange = evt => {
-    const { }
+    const { value,  } = evt.target
   }
 
   render() {
