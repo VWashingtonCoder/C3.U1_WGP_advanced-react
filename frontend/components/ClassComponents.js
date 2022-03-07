@@ -40,7 +40,7 @@ export default class Quotes extends React.Component {
         <ul>
           {
             quotes.map((quote) => {
-              return <li key={}>{}</li>
+              return <li key={quote.id}>{}</li>
             })
           }
         </ul>
