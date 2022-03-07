@@ -46,7 +46,7 @@ export default class Quotes extends React.Component {
             quotes.map((quote) => {
               const { id, text, author} = quote
               return (
-                <li className='qt' key={id}>{author} says {text} <button onClick={this.destroy}>del</button></li>
+                <li className='qt' key={id}>{author} says {text} <button onClick={evt => this.destroy(id)}>del</button></li>
               )
             })
           }
