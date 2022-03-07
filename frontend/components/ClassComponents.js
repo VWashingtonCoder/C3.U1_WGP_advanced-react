@@ -57,7 +57,7 @@ export default class Quotes extends React.Component {
     console.log('state is', this.state)
     // const quotes = this.state.quotes
     // const foo = this.props.foo
-    const { quotes } = this.state
+    const { quotes, form } = this.state
     const { foo } = this.props
     return (
       <div>
@@ -76,7 +76,7 @@ export default class Quotes extends React.Component {
             })
           }
         </ul>
-        <Form values={} />
+        <Form values={form} />
       </div>
     )
   }
