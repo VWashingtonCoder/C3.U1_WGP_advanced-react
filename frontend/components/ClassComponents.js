@@ -27,17 +27,18 @@ export default class Quotes extends React.Component {
   // }
   state = initialState
 
+  destroy = evt => {
+    
+    console.log('clicking!')
+  }
+
   render() {
     console.log('props are', this.props)
     console.log('state is', this.state)
-
     // const quotes = this.state.quotes
     // const foo = this.props.foo
     const { quotes } = this.state
     const { foo } = this.props
-
-
-
     return (
       <div>
         <h2>Quotes: {foo}</h2>
