@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function QuoteForm(props) {
-  const { values, onChange, }
+export default class QuoteForm(props) {
+
   return (
     <form>
       <input type="text" id="textInput" placeholder="type text" />
