@@ -49,7 +49,7 @@ export default class Quotes extends React.Component {
   }
 
   addQuote = () => {
-    this.s
+    this.setState({ ...this.state, })
   }
 
   render() { // traditional method syntax for functions that come with React
