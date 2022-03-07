@@ -2,7 +2,11 @@ import React from 'react'
 
 export default class QuoteForm extends React.Component {
   onSubmit = evt => {
+    evt.preventDefault()
+  }
 
+  onChange = evt => {
+    
   }
 
   render() {
