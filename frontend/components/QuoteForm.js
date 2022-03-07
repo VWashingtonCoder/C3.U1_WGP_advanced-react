@@ -6,14 +6,14 @@ export default class QuoteForm extends React.Component {
   }
 
   onChange = evt => {
-    
+    const { }
   }
 
   render() {
     return (
       <form onSubmit={this.onSubmit}>
-        <input type="text" id="textInput" placeholder="type text" />
-        <input type="text" id="authorInput" placeholder="type author" />
+        <input onChange={this.onChange} type="text" id="textInput" placeholder="type text" />
+        <input onChange={this.onChange} type="text" id="authorInput" placeholder="type author" />
         <input type="submit" />
       </form>
     )
