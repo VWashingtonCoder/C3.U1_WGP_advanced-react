@@ -14,8 +14,9 @@ const initialState = {
   // other slices of state
   errorMessage: '',
   quotes,
+  text: '',
+  author: '',
   form: {
-    
   }
 }
 
