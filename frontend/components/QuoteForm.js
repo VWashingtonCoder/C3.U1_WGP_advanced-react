@@ -3,10 +3,11 @@ import React from 'react'
 export default class QuoteForm extends React.Component {
   onSubmit = evt => {
     evt.preventDefault()
+    console.log('submitting!')
   }
 
   onChange = evt => {
-    const { value,  } = evt.target
+    const { value, id } = evt.target
   }
 
   render() {
