@@ -28,7 +28,7 @@ export default class Quotes extends React.Component {
   state = initialState
 
   destroy = evt => { // arrow syntax for "custom" functions that we build
-    console.log('clicking!', this.)
+    console.log('clicking!', this.state)
   }
 
   render() { // traditional method syntax for functions that come with React
