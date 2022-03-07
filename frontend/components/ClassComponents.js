@@ -31,12 +31,15 @@ export default class Quotes extends React.Component {
     console.log('rendering with props', this.props)
     console.log('state is', this.state)
 
+    const { quotes } = this.state
+    const { foo } = this.props
+
     return (
       <div>
-        <h2>Quotes: {this.props.foo}</h2>
+        <h2>Quotes: {foo}</h2>
         <ul>
           {
-            
+            quotes.map()
           }
         </ul>
         <Form />
