@@ -11,7 +11,7 @@ const quotes = [
 ]
 
 const initialState = {
-  // stuff
+  // other slices of state
   quotes,
 }
 
