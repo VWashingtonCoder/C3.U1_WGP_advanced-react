@@ -28,8 +28,9 @@ export default class Quotes extends React.Component {
   state = initialState
 
   render() {
+    console.log('rendering with props', this.props)
+    console.log('state is', this.state)
 
-    
 
     return (
       <div>
