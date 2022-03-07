@@ -42,6 +42,7 @@ export default class Quotes extends React.Component {
         <ul>
           {
             quotes.map((quote) => {
+              const { id, text, author} = quote
               return <li className='qt' key={quote.id}>{quote.author} says {quote.text}</li>
             })
           }
