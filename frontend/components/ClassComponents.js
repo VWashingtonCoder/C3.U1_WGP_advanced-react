@@ -31,7 +31,6 @@ export default class Quotes extends React.Component {
     console.log('rendering with props', this.props)
     console.log('state is', this.state)
 
-
     return (
       <div>
         <h2>Quotes: {this.props.foo}</h2>
