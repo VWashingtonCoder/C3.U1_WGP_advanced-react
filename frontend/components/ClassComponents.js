@@ -29,7 +29,7 @@ export default class Quotes extends React.Component {
 
   destroy = id => { // arrow syntax for "custom" functions that we build
     console.log('clicking to destroy the following id!', id)
-    this.setState({}) // drop a new state right in there
+    this.setState({ ...this.state, quotes}) // drop a new state right in there
   }
 
   render() { // traditional method syntax for functions that come with React
