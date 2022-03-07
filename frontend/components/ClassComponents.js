@@ -45,7 +45,7 @@ export default class Quotes extends React.Component {
   }
 
   changeInput = (key, value) => {
-
+    
   }
 
   addQuote = () => {
