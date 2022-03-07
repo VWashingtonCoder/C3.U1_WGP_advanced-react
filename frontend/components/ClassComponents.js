@@ -45,8 +45,10 @@ export default class Quotes extends React.Component {
   }
 
   changeInput = (key, value) => {
-    console.log(key, value)
-    this.setState({ ...this.state, form: { ...this.state.form, [key]: value } })
+    this.setState({
+      ...this.state,
+      form: { ...this.state.form, [key]: value },
+    })
   }
 
   addQuote = () => {
