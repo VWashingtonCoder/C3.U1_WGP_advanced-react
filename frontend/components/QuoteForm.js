@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default class QuoteForm(props) {
+export default class QuoteForm extends React.Component {
 
-  return (
-    <form>
-      <input type="text" id="textInput" placeholder="type text" />
-      <input type="text" id="authorInput" placeholder="type author" />
-      <input type="submit" />
-    </form>
-  )
+  render() {
+    return (
+      <form>
+        <input type="text" id="textInput" placeholder="type text" />
+        <input type="text" id="authorInput" placeholder="type author" />
+        <input type="submit" />
+      </form>
+    )
+  }
 }
