@@ -80,7 +80,7 @@ export default class Quotes extends React.Component {
             })
           }
         </ul>
-        <Form onChange={this.changeInput} values={form} />
+        <Form onChange={this.changeInput} values={form} onSubmit={??????} />
       </div>
     )
   }
