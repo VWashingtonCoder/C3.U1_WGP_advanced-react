@@ -3,6 +3,10 @@ import Form from './QuoteForm'
 
 
 
+const quotes = [
+  { id: 1,  },
+]
+
 export default class Quotes extends React.Component {
   render() {
     return (
