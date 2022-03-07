@@ -28,6 +28,9 @@ export default class Quotes extends React.Component {
   state = initialState
 
   render() {
+
+    
+
     return (
       <div>
         <h2>Quotes: {this.props.foo}</h2>
