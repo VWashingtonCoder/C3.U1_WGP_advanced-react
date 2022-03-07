@@ -31,6 +31,8 @@ export default class Quotes extends React.Component {
     console.log('rendering with props', this.props)
     console.log('state is', this.state)
 
+    // const quotes = this.state.quotes
+    // const foo = this.props.foo
     const { quotes } = this.state
     const { foo } = this.props
 
