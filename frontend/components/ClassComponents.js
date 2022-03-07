@@ -14,13 +14,14 @@ const initialState = {
   // other slices of state
   errorMessage: '',
   quotes,
-  text: '',
-  author: '',
   form: {
+    text: '',
+    author: '',
   }
 }
 
 export default class Quotes extends React.Component {
+  state = 
   render() {
     return (
       <div>
