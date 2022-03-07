@@ -47,7 +47,7 @@ export default class Quotes extends React.Component {
               const { id, text, author } = quote
               return (
                 <li className='qt' key={id}>
-                  {author} says {text} <button onClick={() => this.destroy(id)}>del</button>
+                  {author} says {text} <button onClick={evt => this.destroy(id)}>del</button>
                 </li>
               )
             })
