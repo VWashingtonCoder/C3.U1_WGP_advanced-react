@@ -1,7 +1,8 @@
 import React from 'react'
 import Form from './QuoteForm'
 
-
+let idx = 0
+const getIdx = () => ++idx
 
 const quotes = [
   { id: 1,  },
