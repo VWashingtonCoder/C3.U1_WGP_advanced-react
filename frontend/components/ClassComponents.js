@@ -22,7 +22,7 @@ export default class Quotes extends React.Component {
   // state = initialState
 
   componentDidMount() {
-    // this runs after the 1st dom surgery
+    this.getQuotes()
   }
 
   getQuotes = () => {
