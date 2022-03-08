@@ -20,8 +20,8 @@ export default class Quotes extends React.Component {
   getQuotes = () => {
     axios.get(URL)
       .then(res => {})
-      .catch()
-      .finally()
+      .catch(err => {})
+      .finally(() => {})
   }
   addQuote = () => {
     // POST
