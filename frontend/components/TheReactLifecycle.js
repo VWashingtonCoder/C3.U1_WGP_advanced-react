@@ -34,7 +34,7 @@ class TheChild extends React.Component {
   componentDidUpdate(oldProps, oldState) { // useEffect(() => {}, [stuff])
     console.log('👉 this happens after DOM surgeries')
     if (this.state.count == 5) {
-      this.setState({ ...this.state, })
+      this.setState({ ...this.state, count: this.state.count * 100 })
     }
   }
   render() {
