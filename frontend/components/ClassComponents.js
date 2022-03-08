@@ -70,6 +70,7 @@ export default class Quotes extends React.Component {
     // axios.patch(URL + '/' + id)
     axios.patch(`${URL}/${id}`)
       .then(res => {
+        console.log('STATE IS ABOUT TO CHANGE')
         this.setState({
           ...this.state,
           successMessage: res.data.message,
@@ -79,11 +80,16 @@ export default class Quotes extends React.Component {
         })
       })
       .catch(err => {
-        debugger
+        console.log('STATE IS ABOUT TO CHANGE')
+        this.setState({
+          ...this.state,
+          errorMessage: err.response.data.message,
+        })
       })
   }
   destroy = id => {
     // DELETE
+    // you
   }
 
   changeInput = (key, value) => {
