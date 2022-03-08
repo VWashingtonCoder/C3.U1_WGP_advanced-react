@@ -29,7 +29,7 @@ export default class Quotes extends React.Component {
     axios.get(URL)
       .then(res => {
         console.log('AJAX succeeded', res)
-        this.setState({ ...this.state, ??? })
+        this.setState({ ...this.state, quotes: res.data })
       }) // put quotes in comp state, and success message state
       .catch(err => {
         console.log('Something went terrible', err)
