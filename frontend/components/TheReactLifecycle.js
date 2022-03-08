@@ -20,6 +20,10 @@ export default class App extends React.Component {
 }
 
 class TheChild extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { count: 0 }
+  }
   render() {
     console.log('👉 component rendering')
     return (
