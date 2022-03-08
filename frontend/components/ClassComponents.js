@@ -25,7 +25,6 @@ export default class Quotes extends React.Component {
       .catch(err => {
         console.log(err)
       }) // put erro message in proper state
-      .finally(() => {}) //
   }
   addQuote = () => {
     // POST
@@ -47,6 +46,7 @@ export default class Quotes extends React.Component {
   render() { // traditional method syntax for functions that come with React
     console.log('props are', this.props)
     console.log('state is', this.state)
+    this.getQuotes()
     const { quotes, form } = this.state
     const { foo } = this.props
     return (
