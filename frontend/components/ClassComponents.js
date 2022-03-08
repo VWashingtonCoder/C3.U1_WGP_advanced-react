@@ -67,7 +67,7 @@ export default class Quotes extends React.Component {
       })
   }
   capitalizeAuthor = id => {
-    // PATCH
+    axios.patch(`${URL}/${id}`)
   }
   destroy = id => {
     // DELETE
