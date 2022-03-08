@@ -38,6 +38,8 @@ export default class Quotes extends React.Component {
         })
       })
       .catch(err => {
+        // this is for exploring
+        // can also use "debugger"
         console.log('Something went terrible', err)
       })
   }
