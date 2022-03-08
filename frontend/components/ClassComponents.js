@@ -47,6 +47,12 @@ export default class Quotes extends React.Component {
       author: this.state.form.authorInput,
     }
     axios.post(URL, newQuote)
+      .then(res => {
+        debugger
+      })
+      .catch(err => {
+        debugger
+      })
   }
   capitalizeAuthor = id => {
     // PATCH
