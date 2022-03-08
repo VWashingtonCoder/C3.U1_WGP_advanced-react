@@ -2,7 +2,7 @@ import React from 'react'
 import Form from './QuoteForm'
 import axios from 'axios'
 
-const URL = 'http://localhost:9000/api/quoteZ'
+const URL = 'http://localhost:9000/api/quotes'
 
 const initialState = {
   successMessage: '',
@@ -28,6 +28,7 @@ export default class Quotes extends React.Component {
   getQuotes = () => {
     axios.get(URL)
       .then(res => {
+        debugger
         console.log('AJAX succeeded', res)
       }) // put quotes in comp state, and success message state
       .catch(err => {
