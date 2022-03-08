@@ -41,6 +41,7 @@ export default class Quotes extends React.Component {
         // this is for exploring
         // can also use "debugger"
         console.log('Something went terrible', err)
+        this.setState({ ...this.state, err})
       })
   }
   addQuote = () => {
@@ -50,12 +51,14 @@ export default class Quotes extends React.Component {
     }
     axios.post(URL, newQuote)
       .then(res => {
+        console.log('STATE IS ABOUT TO CHANGE')
         this.setState({
           ...this.state,
           quotes: [...this.state.quotes, res.data.new_quote],
         })
       })
       .catch(err => {
+        console.log('STATE IS ABOUT TO CHANGE')
         this.setState({
           ...this.state,
           errorMessage: err.response.data.message,
