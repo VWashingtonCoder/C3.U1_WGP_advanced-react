@@ -29,7 +29,11 @@ export default class Quotes extends React.Component {
     axios.get(URL)
       .then(res => {
         console.log('AJAX succeeded', res)
-        this.setState({ ...this.state, quotes: res.data.quotes })
+        this.setState({
+            ...this.state,
+            quotes: res.data.quotes,
+            successMessage: res.data.message,
+          })
       }) // put quotes in comp state, and success message state
       .catch(err => {
         console.log('Something went terrible', err)
@@ -61,6 +65,7 @@ export default class Quotes extends React.Component {
     return (
       <div>
         <h2>Quotes: {foo}</h2>
+        {this.state.successMessage}
         <ul>
           {
             quotes.map((quote) => {
