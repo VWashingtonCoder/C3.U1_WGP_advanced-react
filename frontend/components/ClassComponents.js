@@ -31,6 +31,7 @@ export default class Quotes extends React.Component {
         console.log('AJAX succeeded', res)
       }) // put quotes in comp state, and success message state
       .catch(err => {
+        debugger
         console.log('Something went terrible', err)
       }) // put erro message in proper state
   }
