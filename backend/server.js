@@ -31,6 +31,11 @@ server.put('/api/quotes/:id', async (req, res) => {
   res.status(status).json(response)
 })
 
+server.patch('/api/quotes/:id', async (req, res) => {
+  const [status, response] = await Quote.patch(req.params.id)
+  res.status(status).json(response)
+})
+
 server.delete('/api/quotes/:id', async (req, res) => {
   const [status, response] = await Quote.remove(req.params.id)
   res.status(status).json(response)
