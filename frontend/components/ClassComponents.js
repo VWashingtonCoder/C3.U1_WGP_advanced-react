@@ -70,7 +70,9 @@ export default class Quotes extends React.Component {
     // axios.patch(URL + '/' + id)
     axios.patch(`${URL}/${id}`)
       .then(res => {
-        debugger
+        this.setState({
+            ...this.state,
+            successMessage: res.data.message})
       })
       .catch(err => {
         debugger
