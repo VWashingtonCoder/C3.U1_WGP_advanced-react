@@ -48,7 +48,7 @@ export default class Quotes extends React.Component {
     }
     axios.post(URL, newQuote)
       .then(res => {
-        this.setState({ ...this.state, quotes: [...quotes] })
+        this.setState({ ...this.state, quotes: [...this.state.quotes, res.data.new_quote] })
       })
       .catch(err => {
         this.setState({ ...this.state, errorMessage: err.response.data.message })
