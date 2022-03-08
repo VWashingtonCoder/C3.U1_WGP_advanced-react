@@ -51,7 +51,7 @@ export default class Quotes extends React.Component {
         debugger
       })
       .catch(err => {
-        debugger
+        this.setState()
       })
   }
   capitalizeAuthor = id => {
