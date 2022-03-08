@@ -42,7 +42,7 @@ export default class Quotes extends React.Component {
       })
   }
   addQuote = () => {
-    // POST
+    const newQuote = { }
   }
   capitalizeAuthor = id => {
     // PATCH
