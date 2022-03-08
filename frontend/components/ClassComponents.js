@@ -28,7 +28,6 @@ export default class Quotes extends React.Component {
   getQuotes = () => {
     axios.get(URL)
       .then(res => {
-        console.log('AJAX succeeded', res)
         this.setState({
           ...this.state,
           quotes: res.data.quotes,
