@@ -28,6 +28,9 @@ class TheChild extends React.Component {
   componentDidMount() {
     console.log('👉 this happens after 1st DOM surgery')
   }
+  componentWillUnmount() {
+    console.log('👉 component about to be destroyed')
+  }
   render() {
     console.log('👉 component rendering')
     return (
