@@ -71,8 +71,10 @@ export default class Quotes extends React.Component {
     axios.patch(`${URL}/${id}`)
       .then(res => {
         this.setState({
-            ...this.state,
-            successMessage: res.data.message})
+          ...this.state,
+          successMessage: res.data.message,
+          quotes: 
+        })
       })
       .catch(err => {
         debugger
