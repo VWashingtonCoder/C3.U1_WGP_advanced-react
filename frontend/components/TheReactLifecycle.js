@@ -25,13 +25,13 @@ class TheChild extends React.Component {
     super(props)
     this.state = { count: 0 }
   }
-  componentDidMount() {
+  componentDidMount() { // useEffect()
     console.log('👉 this happens after 1st DOM surgery')
   }
   componentWillUnmount() {
     console.log('👉 component about to be destroyed')
   }
-  componentDidUpdate() {
+  componentDidUpdate(oldProps, oldState) {
     console.log('👉 this happens after DOM surgeries')
   }
   render() {
