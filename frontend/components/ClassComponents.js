@@ -18,6 +18,7 @@ export default class Quotes extends React.Component {
   constructor(props) {
     super(props)
     this.state = initialState
+    console.log('CONSTRUCTING!')
   }
   // state = initialState
 
@@ -56,9 +57,9 @@ export default class Quotes extends React.Component {
   }
 
   render() { // traditional method syntax for functions that come with React
-    console.log('props are', this.props)
-    console.log('state is', this.state)
-
+    // console.log('props are', this.props)
+    // console.log('state is', this.state)
+    console.log('RENDERING!')
     const { quotes, form } = this.state
     const { foo } = this.props
     return (
