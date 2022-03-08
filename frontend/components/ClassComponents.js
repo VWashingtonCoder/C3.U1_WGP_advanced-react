@@ -74,7 +74,7 @@ export default class Quotes extends React.Component {
           ...this.state,
           successMessage: res.data.message,
           quotes: this.state.quotes.map(q => {
-            return q.id == id ?
+            return q.id == id ? res.data.patched_quote : q
           })
         })
       })
