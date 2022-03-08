@@ -52,6 +52,7 @@ export default class Quotes extends React.Component {
   }
 
   changeInput = (key, value) => {
+    console.log('STATE IS ABOUT TO CHANGE')
     this.setState({
       ...this.state,
       form: { ...this.state.form, [key]: value },
