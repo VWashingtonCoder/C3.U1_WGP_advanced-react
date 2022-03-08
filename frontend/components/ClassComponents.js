@@ -3,7 +3,7 @@ import Form from './QuoteForm'
 
 const initialState = {
   errorMessage: '',
-  quotes: ,
+  quotes: [],
   form: {
     textInput: '',
     authorInput: '',
