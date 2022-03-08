@@ -39,7 +39,7 @@ class TheChild extends React.Component {
     return (
       <div>
         <h3>The count is {this.state.count}</h3>
-        <button onClick={Function.prototype}>increment</button>
+        <button onClick={() => this.setState({ ...this.state, count: this.state.count + 1 })}>increment</button>
       </div>
     )
   }
