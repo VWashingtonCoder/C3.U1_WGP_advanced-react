@@ -31,7 +31,7 @@ class TheChild extends React.Component {
   componentWillUnmount() { // useEffect(() => { return () => { /* cleanup */ } }, [])
     console.log('👉 component about to be destroyed')
   }
-  componentDidUpdate(oldProps, oldState) {
+  componentDidUpdate(oldProps, oldState) { // useEffect(() => {}, [stuff])
     console.log('👉 this happens after DOM surgeries')
   }
   render() {
