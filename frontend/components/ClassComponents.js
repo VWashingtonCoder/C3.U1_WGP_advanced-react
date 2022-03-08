@@ -14,8 +14,8 @@ const initialState = {
 export default class Quotes extends React.Component {
   state = initialState
 
-  destroy = id => {
-    // DELETE
+  getQuotes = () => {
+    // GET
   }
 
   capitalizeAuthor = id => {
@@ -24,6 +24,10 @@ export default class Quotes extends React.Component {
 
   addQuote = () => {
     // POST
+  }
+
+  destroy = id => {
+    // DELETE
   }
 
   changeInput = (key, value) => {
