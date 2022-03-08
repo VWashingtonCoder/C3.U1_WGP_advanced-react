@@ -15,15 +15,15 @@ export default class Quotes extends React.Component {
   state = initialState
 
   destroy = id => {
-
+    // DELETE
   }
 
   capitalizeAuthor = id => {
-
+    // PATCH
   }
 
   addQuote = () => {
-
+    // POST
   }
 
   changeInput = (key, value) => {
