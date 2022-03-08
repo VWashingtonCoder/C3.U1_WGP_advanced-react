@@ -51,6 +51,7 @@ export default class Quotes extends React.Component {
         debugger
       })
       .catch(err => {
+        debugger
         this.setState({ ...this.state, errorMessage: err.data.message })
       })
   }
