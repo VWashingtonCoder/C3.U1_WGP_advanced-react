@@ -10,8 +10,9 @@ Navigate Chrome to `http://localhost:3000`
 
 ## Endpoints
 
-- `GET http://localhost:9000/api/quotes`
-- `GET http://localhost:9000/api/quotes/:id`
-- `POST http://localhost:9000/api/quotes`
-- `UPDATE http://localhost:9000/api/quotes/:id`
-- `DELETE http://localhost:9000/api/quotes/:id`
+- `GET http://localhost:9000/api/quotes` expects no payload
+- `GET http://localhost:9000/api/quotes/:id` expects no payload
+- `DELETE http://localhost:9000/api/quotes/:id` expects no payload
+- `PATCH http://localhost:9000/api/quotes/:id` expects no payload
+- `POST http://localhost:9000/api/quotes` expects `{"author":"foo","text":"bar"}`
+- `UPDATE http://localhost:9000/api/quotes/:id` expects `{"author":"foo","text":"bar"}`
