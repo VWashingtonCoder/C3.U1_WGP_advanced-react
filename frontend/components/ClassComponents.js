@@ -19,29 +19,17 @@ export default class Quotes extends React.Component {
   }
 
   capitalizeAuthor = id => {
-    this.setState({
-      ...this.state, quotes: this.state.quotes.map(quote => {
-        return quote.id === id
-          ? { ...quote, author: quote.author.toUpperCase() }
-          : quote
-      })
-    })
+
+  }
+
+  addQuote = () => {
+
   }
 
   changeInput = (key, value) => {
     this.setState({
       ...this.state,
       form: { ...this.state.form, [key]: value },
-    })
-  }
-
-  addQuote = () => {
-    const { quotes, form: { textInput, authorInput } } = this.state
-    const newQuote = { id: getIdx(), text: textInput, author: authorInput }
-    this.setState({
-      ...this.state,
-      form: initialState.form,
-      quotes: [...quotes, newQuote],
     })
   }
 
