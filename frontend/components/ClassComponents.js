@@ -2,6 +2,8 @@ import React from 'react'
 import Form from './QuoteForm'
 import axios from 'axios'
 
+const URL = 'http://localhost:9000/api/quotes'
+
 const initialState = {
   successMessage: '',
   errorMessage: '',
@@ -16,7 +18,7 @@ export default class Quotes extends React.Component {
   state = initialState
 
   getQuotes = () => {
-    // GET
+    axios.get()
   }
   addQuote = () => {
     // POST
