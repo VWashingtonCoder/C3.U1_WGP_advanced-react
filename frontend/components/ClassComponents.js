@@ -17,15 +17,12 @@ export default class Quotes extends React.Component {
   getQuotes = () => {
     // GET
   }
-
-  capitalizeAuthor = id => {
-    // PATCH
-  }
-
   addQuote = () => {
     // POST
   }
-
+  capitalizeAuthor = id => {
+    // PATCH
+  }
   destroy = id => {
     // DELETE
   }
