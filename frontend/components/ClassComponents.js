@@ -51,7 +51,7 @@ export default class Quotes extends React.Component {
         debugger
       })
       .catch(err => {
-        debugger
+        ????
       })
   }
   capitalizeAuthor = id => {
@@ -79,6 +79,7 @@ export default class Quotes extends React.Component {
       <div>
         <h2>Quotes: {foo}</h2>
         {this.state.successMessage}
+        {this.state.errorMessage}
         <ul>
           {
             quotes.map((quote) => {
