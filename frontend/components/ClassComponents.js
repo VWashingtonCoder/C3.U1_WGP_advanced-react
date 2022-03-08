@@ -24,11 +24,13 @@ export default class Quotes extends React.Component {
 
   componentDidMount() {
     this.getQuotes()
+    console.log('THIS HAPPENS AFTER 1ST DOM SURGERY ONLY!')
   }
 
   getQuotes = () => {
     axios.get(URL)
       .then(res => {
+        console.log('STATE IS ABOUT TO CHANGE')
         this.setState({
           ...this.state,
           quotes: res.data.quotes,
