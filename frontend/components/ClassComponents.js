@@ -42,7 +42,10 @@ export default class Quotes extends React.Component {
       })
   }
   addQuote = () => {
-    const newQuote = { }
+    const newQuote = {
+      text: this.state.form.textInput,
+      author: this.state.form.authorInput,
+    }
   }
   capitalizeAuthor = id => {
     // PATCH
