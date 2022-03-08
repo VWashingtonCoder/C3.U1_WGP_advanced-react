@@ -2,7 +2,7 @@ import React from 'react'
 import Form from './QuoteForm'
 import axios from 'axios'
 
-const URL = 'http://localhost:9000/api/quotes'
+const URL = 'http://localhost:9000/api/quoteZ'
 
 const initialState = {
   successMessage: '',
