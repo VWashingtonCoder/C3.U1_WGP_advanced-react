@@ -73,7 +73,7 @@ export default class Quotes extends React.Component {
         this.setState({
           ...this.state,
           successMessage: res.data.message,
-          quotes: 
+          quotes: this.state.quotes.
         })
       })
       .catch(err => {
