@@ -33,6 +33,9 @@ class TheChild extends React.Component {
   }
   componentDidUpdate(oldProps, oldState) { // useEffect(() => {}, [stuff])
     console.log('👉 this happens after DOM surgeries')
+    if (this.state.count == 5) {
+      this.setState({ ...this.state, })
+    }
   }
   render() {
     console.log('👉 component rendering')
