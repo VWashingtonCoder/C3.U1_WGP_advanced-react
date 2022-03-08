@@ -55,6 +55,7 @@ export default class Quotes extends React.Component {
         this.setState({
           ...this.state,
           quotes: [...this.state.quotes, res.data.new_quote],
+          // also reset the form!
         })
       })
       .catch(err => {
