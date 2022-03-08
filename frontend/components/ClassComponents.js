@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './QuoteForm'
 
 const initialState = {
+  successMessage: '',
   errorMessage: '',
   quotes: [],
   form: {
@@ -14,10 +15,7 @@ export default class Quotes extends React.Component {
   state = initialState
 
   destroy = id => {
-    console.log('clicking to destroy the following id!', id)
-    this.setState({
-      ...this.state, quotes: this.state.quotes.filter(quote => quote.id !== id)
-    })
+
   }
 
   capitalizeAuthor = id => {
