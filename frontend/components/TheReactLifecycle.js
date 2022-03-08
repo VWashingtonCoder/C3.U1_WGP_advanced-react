@@ -21,6 +21,7 @@ export default class App extends React.Component {
 
 class TheChild extends React.Component {
   constructor(props) {
+    console.log('👉 component being constructed')
     super(props)
     this.state = { count: 0 }
   }
@@ -28,7 +29,7 @@ class TheChild extends React.Component {
     console.log('👉 component rendering')
     return (
       <div>
-        <h3>The count is 0</h3>
+        <h3>The count is {this.state.count}</h3>
         <button onClick={Function.prototype}>increment</button>
       </div>
     )
