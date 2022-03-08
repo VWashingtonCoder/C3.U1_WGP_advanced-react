@@ -37,7 +37,7 @@ export default class Quotes extends React.Component {
       })
       .catch(err => {
         console.log('Something went terrible', err)
-      }) // put erro message in proper state
+      })
   }
   addQuote = () => {
     // POST
