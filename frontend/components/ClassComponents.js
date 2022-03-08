@@ -41,7 +41,7 @@ export default class Quotes extends React.Component {
         // this is for exploring
         // can also use "debugger"
         console.log('Something went terrible', err)
-        this.setState({ ...this.state, err})
+        this.setState({ ...this.state, errorMessage: 'DISASTER' })
       })
   }
   addQuote = () => {
