@@ -11,7 +11,6 @@ const quotes = [
 ]
 
 const initialState = {
-  // other slices of state
   errorMessage: '',
   quotes,
   form: {
@@ -21,21 +20,16 @@ const initialState = {
 }
 
 export default class Quotes extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = initialState
-  // }
   state = initialState
 
-  destroy = id => { // arrow syntax for "custom" functions that we build
+  destroy = id => {
     console.log('clicking to destroy the following id!', id)
     this.setState({
       ...this.state, quotes: this.state.quotes.filter(quote => quote.id !== id)
-    }) // drop a new state right in there
+    })
   }
 
   capitalizeAuthor = id => {
-    // state changing machinery lives where state lives
     this.setState({
       ...this.state, quotes: this.state.quotes.map(quote => {
         return quote.id === id
@@ -65,8 +59,6 @@ export default class Quotes extends React.Component {
   render() { // traditional method syntax for functions that come with React
     console.log('props are', this.props)
     console.log('state is', this.state)
-    // const quotes = this.state.quotes
-    // const foo = this.props.foo
     const { quotes, form } = this.state
     const { foo } = this.props
     return (
