@@ -30,11 +30,11 @@ export default class Quotes extends React.Component {
       .then(res => {
         console.log('AJAX succeeded', res)
         this.setState({
-            ...this.state,
-            quotes: res.data.quotes,
-            successMessage: res.data.message,
-          })
-      }) // put quotes in comp state, and success message state
+          ...this.state,
+          quotes: res.data.quotes,
+          successMessage: res.data.message,
+        })
+      })
       .catch(err => {
         console.log('Something went terrible', err)
       }) // put erro message in proper state
