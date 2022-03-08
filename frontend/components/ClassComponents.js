@@ -15,11 +15,11 @@ const initialState = {
 }
 
 export default class Quotes extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = initialState
-  // }
-  state = initialState
+  constructor(props) {
+    super(props)
+    this.state = initialState
+  }
+  // state = initialState
 
   componentDidMount() {
     // this runs after the 1st dom surgery
