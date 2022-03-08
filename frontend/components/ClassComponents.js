@@ -19,8 +19,8 @@ export default class Quotes extends React.Component {
 
   getQuotes = () => {
     axios.get(URL)
-      .then(res => {})
-      .catch(err => {})
+      .then(res => {}) // put quotes in comp state, and success message state
+      .catch(err => {}) // put erro message in proper state
       .finally(() => {})
   }
   addQuote = () => {
