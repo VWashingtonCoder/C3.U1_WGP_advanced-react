@@ -70,10 +70,10 @@ export default class Quotes extends React.Component {
     // axios.patch(URL + '/' + id)
     axios.patch(`${URL}/${id}`)
       .then(res => {
-
+        debugger
       })
       .catch(err => {
-        
+        debugger
       })
   }
   destroy = id => {
