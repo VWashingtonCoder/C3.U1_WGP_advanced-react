@@ -25,6 +25,9 @@ class TheChild extends React.Component {
     super(props)
     this.state = { count: 0 }
   }
+  componentDidMount() {
+    console.log('👉 this happens after 1st DOM surgery')
+  }
   render() {
     console.log('👉 component rendering')
     return (
