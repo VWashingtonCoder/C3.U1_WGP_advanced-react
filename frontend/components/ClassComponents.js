@@ -17,7 +17,9 @@ const initialState = {
 export default class Quotes extends React.Component {
   state = initialState
 
-  
+  componentDidMount() {
+    // ?
+  }
 
   getQuotes = () => {
     axios.get(URL)
