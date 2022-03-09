@@ -9,7 +9,7 @@ export function useLocalStorage(key, value) {
   const setStoredValue = value => {
     // persist in local storage
     const stringifiedValue = JSON.stringify(value)
-    window.localStorage.setValueLS
+    window.localStorage.setItem(key, )
     // put it in state using the setValueLS above
   }
 }
