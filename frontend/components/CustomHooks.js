@@ -29,7 +29,7 @@ export function useRandomQuote() {
       })
   }
 
-  return quote?.text
+  return quote?.
 }
 
 export default function App() {
