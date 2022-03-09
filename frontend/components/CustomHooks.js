@@ -16,12 +16,13 @@ export function useRandomQuote() {
     getQuotes()
   }, [])
 
-  function getQuotes () {
+  function getQuotes() {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
         const allQuotes = res.data.quotes
         const numberOfQuotes = allQuotes.length
-        const randomNumber = Math.floor(Math.random(numberOfQuotes) )
+        const randomNumber = Math.floor(Math.random(numberOfQuotes) * numberOfQuotes)
+        debugger
       })
       .catch(err => {
         debugger
