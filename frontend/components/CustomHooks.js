@@ -47,13 +47,15 @@ export default function App() {
   const quoteOfTheDay = useRandomQuote()
 
   return (
-    <form>
+    <>
       <h1>{count}</h1>
       <button onClick={evt => setCount(count + 1)}>inc</button>
-      <h2>Custom Hooks {quoteOfTheDay}</h2>
-      <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
-      <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
-      <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
-    </form>
+      <form>
+        <h2>Custom Hooks {quoteOfTheDay}</h2>
+        <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
+        <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
+        <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
+      </form>
+    </>
   )
 }
