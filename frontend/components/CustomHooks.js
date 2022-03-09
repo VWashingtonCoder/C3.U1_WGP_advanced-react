@@ -13,6 +13,7 @@ export function useLocalStorage(key, value) {
     // put it in state using the setValueLS above
     setValueLS(value)
   }
+  return []
 }
 
 export function useForm(values) {
