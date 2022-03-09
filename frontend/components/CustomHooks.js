@@ -13,7 +13,7 @@ export function useRandomQuote() {
   const [quote, setQuote] = useState()
 
   useEffect(() => {
-    //change state happens in here
+    getQuotes()
   }, [])
 
   function getQuotes () {
@@ -26,7 +26,7 @@ export function useRandomQuote() {
       })
   }
 
-  return quote.text
+  // return quote.text
 }
 
 export default function App() {
