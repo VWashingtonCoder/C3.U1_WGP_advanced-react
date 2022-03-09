@@ -21,6 +21,8 @@ export function useRandomQuote() {
         debugger
       })
   }
+
+  return quote.text
 }
 
 export default function App() {
