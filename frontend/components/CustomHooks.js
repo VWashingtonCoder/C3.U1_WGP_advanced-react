@@ -19,7 +19,7 @@ export function useRandomQuote() {
   function getQuotes () {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
-        debugger
+        const allQuotes = res.data.quotes
       })
       .catch(err => {
         debugger
