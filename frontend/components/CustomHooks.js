@@ -11,7 +11,9 @@ export function useForm(values) {
 export function useRandomQuote() {
   const [quote, setQuote] = useState()
 
-  
+  function getQuotes () {
+    
+  }
 
 }
 
