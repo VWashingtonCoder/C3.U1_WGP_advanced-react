@@ -21,7 +21,7 @@ export function useRandomQuote() {
       .then(res => {
         const allQuotes = res.data.quotes
         const numberOfQuotes = allQuotes.length
-        const randomNumber = 
+        const randomNumber = Math.floor(Math.random(numberOfQuotes) )
       })
       .catch(err => {
         debugger
