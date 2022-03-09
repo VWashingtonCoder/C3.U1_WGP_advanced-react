@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 export function useForm(values) {
   const [form, setForm] = useState(values)
@@ -12,9 +13,8 @@ export function useRandomQuote() {
   const [quote, setQuote] = useState()
 
   function getQuotes () {
-    
+    axios
   }
-
 }
 
 export default function App() {
