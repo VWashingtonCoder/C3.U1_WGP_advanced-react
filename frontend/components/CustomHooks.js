@@ -8,7 +8,9 @@ export function useForm(values) {
   return [form, onChange]
 }
 
-
+export function useRandomQuote() {
+  const []
+}
 
 export default function App() {
   const [form, onChange] = useForm({ foo: '', bar: '', baz: '' })
