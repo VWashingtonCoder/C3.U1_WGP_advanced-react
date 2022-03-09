@@ -9,7 +9,10 @@ export function useForm(values) {
 }
 
 export function useRandomQuote() {
-  const []
+  const [quote, setQuote] = useState()
+
+  
+
 }
 
 export default function App() {
