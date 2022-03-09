@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useLocalStorage(key, value) {
-  const [valueLS, setValue] = useState(() => {
+  const [valueLS, setValueLS] = useState(() => {
     const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
-  const setValue = value => {
+  const setStoredValue = value => {
     // put it in state using the setValueLS above
     // persist in local storage
   }
