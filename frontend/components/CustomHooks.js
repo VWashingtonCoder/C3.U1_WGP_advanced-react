@@ -10,7 +10,7 @@ export function useForm(values) {
 }
 
 export function useRandomQuote() {
-  const [quote, setQuote] = useState({})
+  const [quote, setQuote] = useState('')
 
   useEffect(() => {
     getQuotes()
@@ -22,14 +22,14 @@ export function useRandomQuote() {
         const allQuotes = res.data.quotes
         const numberOfQuotes = allQuotes.length
         const randomNumber = Math.floor(Math.random() * numberOfQuotes)
-        setQuote(allQuotes[randomNumber])
+        setQuote(allQuotes[randomNumber].text)
       })
       .catch(err => {
         debugger
       })
   }
 
-  return quote.text
+  return quote
 }
 
 export default function App() {
