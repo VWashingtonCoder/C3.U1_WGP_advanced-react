@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useLocalStorage(key, value) {
-  const [valueLS, setValueLS] = useState(() => {
+  const [valueLS, setValue] = useState(() => {
     const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
-  const setValue  = value 
+  const setValue = value => {
+    // put it in state using the setValueLS above
+    // persist in local storage
+  }
 }
 
 export function useForm(values) {
