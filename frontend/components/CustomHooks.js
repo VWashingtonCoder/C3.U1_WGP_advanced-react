@@ -11,7 +11,7 @@ export function useLocalStorage(key, value) {
     // persist the stringified value in local storage
     window.localStorage.setItem(key, stringifiedValue)
     // put it in state using the setValueLS above
-    // setValueLS(value)
+    setValueLS(value)
   }
   return [valueLS, setStoredValue]
 }
