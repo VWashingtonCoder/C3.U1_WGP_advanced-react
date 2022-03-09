@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 
+function useForm(values) {
+
+}
+
 export default function App() {
   const [form, setForm] = useState({ foo: '', bar: '', baz: '' })
   const onChange = ({ target: { name, value } }) =>
