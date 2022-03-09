@@ -18,12 +18,10 @@ export function useRandomQuote() {
       .then(res => {
         const allQuotes = res.data.quotes
         const numberOfQuotes = allQuotes.length
-        const randomNumber = Math.floor(Math.random() * numberOfQuotes)
-        setQuote(allQuotes[randomNumber].text)
+        const randomIndex = Math.floor(Math.random() * numberOfQuotes)
+        setQuote(allQuotes[randomIndex].text)
       })
-      .catch(err => {
-        debugger
-      })
+      .catch(err => { debugger })
   }
   return quote
 }
