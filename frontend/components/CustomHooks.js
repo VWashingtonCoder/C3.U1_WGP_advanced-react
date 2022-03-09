@@ -15,9 +15,11 @@ export function useRandomQuote() {
   function getQuotes () {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
-        
+        debugger
       })
-      .catch(err => {})
+      .catch(err => {
+        debugger
+      })
   }
 }
 
