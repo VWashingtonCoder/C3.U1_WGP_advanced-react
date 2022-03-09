@@ -6,6 +6,7 @@ export function useLocalStorage(key, value) {
     const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
+  const setValue  = value 
 }
 
 export function useForm(values) {
