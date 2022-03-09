@@ -10,7 +10,6 @@ function useForm(values) {
 
 export default function App() {
   const [form, onChange] = useForm({ foo: '', bar: '', baz: '' })
-
   return (
     <form>
       <h2>Custom Hooks</h2>
