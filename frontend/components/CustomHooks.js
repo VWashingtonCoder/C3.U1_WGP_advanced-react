@@ -43,10 +43,12 @@ export function useRandomQuote() {
 
 export default function App() {
   const [form, onChange] = useForm({ foo: '', bar: '', baz: '' })
+  const [count, setCount] = useLocalStorage(0)
   const quoteOfTheDay = useRandomQuote()
 
   return (
     <form>
+      <h1>{count}</h1>
       <h2>Custom Hooks {quoteOfTheDay}</h2>
       <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
       <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
