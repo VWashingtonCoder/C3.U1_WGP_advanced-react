@@ -11,10 +11,7 @@ export function useForm(values) {
 
 export function useRandomQuote() {
   const [quote, setQuote] = useState('')
-
-  useEffect(() => {
-    getQuotes()
-  }, [])
+  useEffect(() => { getQuotes() }, [])
 
   function getQuotes() {
     axios.get('http://localhost:9000/api/quotes')
@@ -28,7 +25,6 @@ export function useRandomQuote() {
         debugger
       })
   }
-
   return quote
 }
 
