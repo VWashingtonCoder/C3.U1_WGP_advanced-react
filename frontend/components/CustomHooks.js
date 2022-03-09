@@ -23,6 +23,7 @@ export function useRandomQuote() {
         const numberOfQuotes = allQuotes.length
         const randomNumber = Math.floor(Math.random() * numberOfQuotes)
         setQuote(allQuotes[randomNumber])
+        debugger
       })
       .catch(err => {
         debugger
