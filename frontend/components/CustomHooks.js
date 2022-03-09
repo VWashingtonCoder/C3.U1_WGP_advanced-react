@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useLocalStorage(key, value) {
-  const item = window.localStorage.getItem(key)
   const [valueLS, setValueLS] = useState(() => {
+    const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
 }
