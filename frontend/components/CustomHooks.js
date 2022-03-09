@@ -22,9 +22,9 @@ export function useRandomQuote() {
         const allQuotes = res.data.quotes
         const numberOfQuotes = allQuotes.length
         const randomNumber = Math.floor(Math.random() * numberOfQuotes)
-        return 5
+        return allQuotes[randomNumber]
       })
-      .then(theFive => {
+      .then(theRandomQuote => {
         // ??
       })
       .catch(err => {
