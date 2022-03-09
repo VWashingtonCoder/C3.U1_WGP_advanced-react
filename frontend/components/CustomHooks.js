@@ -3,17 +3,19 @@ import axios from 'axios'
 
 export function useLocalStorage(key, value) {
   const [valueLS, setValueLS] = useState(() => {
+    debugger
     const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
   const setStoredValue = value => {
+    debugger
     const stringifiedValue = JSON.stringify(value)
     // persist the stringified value in local storage
     window.localStorage.setItem(key, stringifiedValue)
     // put it in state using the setValueLS above
     setValueLS(value)
   }
-  return []
+  return [valueLS, setStoredValue]
 }
 
 export function useForm(values) {
