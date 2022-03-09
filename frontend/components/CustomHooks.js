@@ -3,12 +3,10 @@ import axios from 'axios'
 
 export function useLocalStorage(key, value) {
   const [valueLS, setValueLS] = useState(() => {
-    debugger
     const item = window.localStorage.getItem(key)
     return item ? JSON.parse(item) : value
   })
   const setStoredValue = value => {
-    debugger
     const stringifiedValue = JSON.stringify(value)
     // persist the stringified value in local storage
     window.localStorage.setItem(key, stringifiedValue)
