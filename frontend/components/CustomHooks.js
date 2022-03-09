@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useForm(values) {
-  const [form, setForm] = useState(values)
+  const [form, setForm] = useLocalStorage('form', values)
   const onChange = ({ target: { name, value } }) =>
     setForm({ ...form, [name]: value })
 
