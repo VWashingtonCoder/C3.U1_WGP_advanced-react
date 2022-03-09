@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useLocalStorage(key, value) {
-  const []
+  const [valueLS, setValueLS] = useState(() => {
+    
+  })
 }
 
 export function useForm(values) {
