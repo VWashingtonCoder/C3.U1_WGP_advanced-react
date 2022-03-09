@@ -13,7 +13,11 @@ export function useRandomQuote() {
   const [quote, setQuote] = useState()
 
   function getQuotes () {
-    axios
+    axios.get('http://localhost:9000/api/quotes')
+      .then(res => {
+        
+      })
+      .catch(err => {})
   }
 }
 
