@@ -10,6 +10,7 @@ export function useForm(values) {
 
 export default function App() {
   const [form, onChange] = useForm({ foo: '', bar: '', baz: '' })
+  const quoteOfTheDay = useRandomQuote()
   return (
     <form>
       <h2>Custom Hooks</h2>
