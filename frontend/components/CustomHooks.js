@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export function useForm(values) {
@@ -11,6 +11,10 @@ export function useForm(values) {
 
 export function useRandomQuote() {
   const [quote, setQuote] = useState()
+
+  useEffect(() => {
+    //change state happens in here
+  }, [])
 
   function getQuotes () {
     axios.get('http://localhost:9000/api/quotes')
