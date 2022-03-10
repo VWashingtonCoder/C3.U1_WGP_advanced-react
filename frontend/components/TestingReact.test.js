@@ -42,5 +42,6 @@ describe('App component', () => {
     // queryBy
     const firstTodo = await screen.findByText('walk the dog', { exact: false })
     expect(firstTodo).toBeInTheDocument()
+    const secondTodo = await screen.findByText('learn react/)
   })
 })
