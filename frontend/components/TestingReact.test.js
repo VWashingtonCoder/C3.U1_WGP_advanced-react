@@ -22,6 +22,6 @@ describe('App component', () => {
     // const heading = document.querySelector('h2') // not like this
     const heading = screen.queryByText('Todos:') // capturing the node
     expect(heading).toBeVisible() // an assertion
-    expect(heading).toBeInTheDocument() // 
+    expect(heading).toBeInTheDocument() // another assertion
   })
 })
