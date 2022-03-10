@@ -13,5 +13,7 @@ afterEach(() => {
 })
 
 describe('App component', () => {
-  
+  test('Renders without crashing', () => {
+    
+  })
 })
