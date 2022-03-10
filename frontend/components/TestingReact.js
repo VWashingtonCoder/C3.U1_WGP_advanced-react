@@ -60,7 +60,8 @@ export default class App extends React.Component {
     return (
       <div>
         <div id="todoList">
-          <h2 data-testid='todoListHeading'>{this.props.date} Todos:</h2>
+        {this.props.date} 
+          <h2 data-testid='todoListHeading'>Todos:</h2>
           {
             this.state.todos.reduce((acc, td) => {
               if (this.state.showCompleteds || !td.completed) return acc.concat(
