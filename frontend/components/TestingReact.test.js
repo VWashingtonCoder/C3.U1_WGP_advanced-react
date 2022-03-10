@@ -20,6 +20,6 @@ describe('App component', () => {
   })
   test('Renders heading "Todos:"', () => {
     const heading = document.querySelector('h2')
-    console.log(heading.innerText)
+    console.log(heading)
   })
 })
