@@ -73,6 +73,6 @@ describe('App component', () => {
   })
   test('we can submit a new todo and it renders to the screen', () => {
     fireEvent.change(todoInput(), { target: { value: 'Have LOTS of fun' } })
-
+    fireEvent.click(submitBtn())
   })
 })
