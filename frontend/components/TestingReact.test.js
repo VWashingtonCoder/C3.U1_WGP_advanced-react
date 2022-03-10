@@ -51,6 +51,9 @@ describe('App component', () => {
   })
   test('renders have fun twice', () => {
     const haveFuns = screen.getAllByText('have fun', { exact: false })
+    haveFuns.forEach(todo => {
+      expect(todo).toBeVisible()
+    })
     expect(haveFuns).toHaveLength(2)
   })
   test('submit button is disabled until we type one char', () => {
