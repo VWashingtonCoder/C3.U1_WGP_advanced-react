@@ -8,6 +8,7 @@ const initialTodos = [
   { id: getId(), name: "Walk the dog", completed: false },
   { id: getId(), name: "Learn React", completed: true },
   { id: getId(), name: "Have fun", completed: false },
+  { id: getId(), name: "Have fun", completed: false },
 ]
 
 export default class App extends React.Component {
@@ -60,7 +61,7 @@ export default class App extends React.Component {
     return (
       <div>
         <div id="todoList">
-        {this.props.date} 
+        {this.props.date}
           <h2 data-testid='todoListHeading'>Todos:</h2>
           {
             this.state.todos.reduce((acc, td) => {
