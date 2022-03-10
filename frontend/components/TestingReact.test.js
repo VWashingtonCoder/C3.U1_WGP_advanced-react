@@ -20,7 +20,8 @@ describe('App component', () => {
   })
   test('Renders heading "Todos:"', () => {
     // const heading = document.querySelector('h2') // not like this
-    const heading = screen.queryByText('Todos:')
-    expect(heading).toBeVisible()
+    const heading = screen.queryByText('Todos:') // capturing the node
+    expect(heading).toBeVisible() // an assertion
+    expect(heading).toBeInTheDocument() // 
   })
 })
