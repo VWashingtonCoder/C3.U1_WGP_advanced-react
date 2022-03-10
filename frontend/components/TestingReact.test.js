@@ -20,7 +20,7 @@ describe('App component', () => {
   })
   test('Renders the heading', () => {
     // const heading = document.querySelector('h2') // not like this
-    const heading = screen.queryByText('Todos:') // capturing the node
+    const heading = screen.queryByText('Todos:', { exact: false }) // capturing the node
     expect(heading).toBeVisible() // an assertion
     expect(heading).toBeInTheDocument() // another assertion
   })
@@ -34,7 +34,7 @@ describe('App component', () => {
     screen.getByText('yesterday') // getBy -> these fail the test outright if not found
   })
   test('Does NOT render "foo"', () => {
-    const notThere = screen.queryByText('foo')
+    const notThere = screen.queryByText('foo', { exact: false })
     expect(notThere).not.toBeInTheDocument()
   })
   test('renders first todo', async () => {
