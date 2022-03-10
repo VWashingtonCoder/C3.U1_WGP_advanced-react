@@ -72,11 +72,14 @@ describe('App component', () => {
     expect(input).toHaveValue('ab')
   })
   test('we can submit a new todo and it renders to the screen', async () => {
-    expect(todoInput()).toHaveValue('')
     fireEvent.change(todoInput(), { target: { value: 'Have LOTS of fun' } })
-    expect(todoInput()).toHaveValue('Have LOTS of fun')
     fireEvent.click(submitBtn())
     await screen.findByText('Have LOTS of fun')
+  })
+  test('input works correctly', () => {
     expect(todoInput()).toHaveValue('')
+    expect(todoInput()).toHaveValue('Have LOTS of fun')
+    // expect(todoInput()).toHaveValue('')
+
   })
 })
