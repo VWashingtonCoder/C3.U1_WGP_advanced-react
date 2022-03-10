@@ -26,6 +26,7 @@ describe('App component', () => {
   })
   test('Renders heading (grab by test id)', () => {
     const h2 = screen.queryByTestId('todoListHeading')
-    
+    expect(h2).toBeVisible() // an assertion
+    expect(h2).toBeInTheDocument() // another assertion
   })
 })
