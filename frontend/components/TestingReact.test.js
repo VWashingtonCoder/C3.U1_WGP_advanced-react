@@ -18,13 +18,13 @@ describe('App component', () => {
     // assertions against this fake DOM
     // screen.debug()
   })
-  test('Renders heading "Todos:"', () => {
+  test('Renders the heading', () => {
     // const heading = document.querySelector('h2') // not like this
     const heading = screen.queryByText('Todos:') // capturing the node
     expect(heading).toBeVisible() // an assertion
     expect(heading).toBeInTheDocument() // another assertion
   })
-  test('Renders heading (grab by test id)', () => {
+  test('Renders the heading (grab by test id)', () => {
     const h2 = screen.queryByTestId('todoListHeading')
     expect(h2).toBeVisible() // an assertion
     expect(h2).toBeInTheDocument() // another assertion
