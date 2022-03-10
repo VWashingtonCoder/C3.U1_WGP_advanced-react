@@ -16,5 +16,6 @@ describe('App component', () => {
   test('Renders without crashing', () => {
     // assertions against this fake DOM
     // heading Todos: is visible
+    screen.debug()
   })
 })
