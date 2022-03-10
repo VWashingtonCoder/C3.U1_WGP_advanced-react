@@ -3,6 +3,8 @@ import { render, fireEvent, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
+const todoInput = () => screen.getByPlaceholderText('Type todo')
+
 beforeEach(() => {
   render(<App date="yesterday" />)
 })
@@ -69,7 +71,6 @@ describe('App component', () => {
     expect(input).toHaveValue('ab')
   })
   test('we can submit a new todo and it renders to the screen', () => {
-    const input = screen.getByPlaceholderText('Type todo')
-    fireEvent.change(input, { target: { value: 'a' } })
+    fireEvent.change(todoInput(), { target: { value: 'a' } })
   })
 })
