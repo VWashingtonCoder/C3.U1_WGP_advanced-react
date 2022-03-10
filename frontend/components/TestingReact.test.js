@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-  render(<App date="yesterday"/>)
+  render(<App date="yesterday" />)
 })
 
 afterEach(() => {
@@ -47,6 +47,6 @@ describe('App component', () => {
     expect(secondTodo.textContent).toBe('Learn React ✔️')
   })
   test('renders have fun twice', () => {
-    
+    screen.getByText('have fun', { exact: false })
   })
 })
