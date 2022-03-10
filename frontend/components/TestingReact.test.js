@@ -38,8 +38,9 @@ describe('App component', () => {
     expect(notThere).not.toBeInTheDocument()
   })
   test('renders first todo', async () => {
-    // getBy
-    // queryBy
+    // getBy   // crash imm if not found
+    // queryBy // return a big null if not found
+    // findBy  // retry for a bit (do not forget async/await)
     const firstTodo = await screen.findByText('walk the dog', { exact: false })
     expect(firstTodo).toBeInTheDocument()
     const secondTodo = await screen.findByText(/learn react/i)
