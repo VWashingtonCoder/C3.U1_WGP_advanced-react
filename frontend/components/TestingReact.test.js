@@ -68,5 +68,7 @@ describe('App component', () => {
     // assert that input acquired the value
     expect(input).toHaveValue('ab')
   })
-  test('')
+  test('we can submit a new todo and it renders to the screen', () => {
+    
+  })
 })
