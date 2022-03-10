@@ -47,6 +47,7 @@ describe('App component', () => {
     expect(secondTodo.textContent).toBe('Learn React ✔️')
   })
   test('renders have fun twice', () => {
-    screen.getByText('have fun', { exact: false })
+    const haveFuns = screen.getAllByText('have fun', { exact: false })
+    expect(haveFuns).toHaveLength(2)
   })
 })
