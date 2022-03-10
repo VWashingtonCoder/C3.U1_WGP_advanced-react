@@ -16,10 +16,10 @@ afterEach(() => {
 describe('App component', () => {
   test('Renders without crashing', () => {
     // assertions against this fake DOM
-    screen.debug()
+    // screen.debug()
   })
   test('Renders heading "Todos:"', () => {
     const heading = document.querySelector('h2')
-    console.log(heading)
+    console.log(heading.type)
   })
 })
