@@ -10,6 +10,7 @@ beforeEach(() => {
 afterEach(() => {
   // destroy fake DOM
   // no need, happnens automatically
+  window.localStorage.clear()
 })
 
 describe('App component', () => {
