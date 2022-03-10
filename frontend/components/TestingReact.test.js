@@ -37,9 +37,9 @@ describe('App component', () => {
     const notThere = screen.queryByText('foo')
     expect(notThere).not.toBeInTheDocument()
   })
-  test('renders first todo', () => {
+  test('renders first todo', async () => {
     // getBy
     // queryBy
-    
+    const firstTodo = await findBy
   })
 })
