@@ -31,6 +31,9 @@ describe('App component', () => {
   })
   test('Renders the correct date', () => {
     // queryBy -> these return null if the thing is not found
-    screen.getByText('tomorrow') // getBy -> these fail the test outright if not found
+    screen.getByText('yesterday') // getBy -> these fail the test outright if not found
+  })
+  test('Does NOT render "foo"', () => {
+    
   })
 })
