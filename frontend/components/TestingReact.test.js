@@ -51,14 +51,15 @@ describe('App component', () => {
     expect(haveFuns).toHaveLength(2)
   })
   test('submit button is disabled until we type one char', () => {
-    // capture buttton
+    // capture button
     const submitBtn = screen.getByText('Submit Todo')
     // assert it's disabled
     expect(submitBtn).toBeDisabled()
-    // type on input
+    // capture input
     const input = screen.getByPlaceholderText('Type todo')
-    // assert that input acquired the value
+    // type on input
     fireEvent.change(input, { target: { value: 'a' } })
+    // assert that input acquired the value
     expect(input).toHaveValue('a')
   })
 })
