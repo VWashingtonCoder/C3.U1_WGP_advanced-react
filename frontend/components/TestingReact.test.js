@@ -18,5 +18,7 @@ describe('App component', () => {
     // assertions against this fake DOM
     screen.debug()
   })
-  test('Renders heading "Todos:"')
+  test('Renders heading "Todos:"', () => {
+    const heading = 
+  })
 })
