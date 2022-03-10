@@ -34,6 +34,7 @@ describe('App component', () => {
     screen.getByText('yesterday') // getBy -> these fail the test outright if not found
   })
   test('Does NOT render "foo"', () => {
-    
+    const notThere = screen.queryByText('foo')
+    expect(notThere).not.toBeInTheDocument()
   })
 })
