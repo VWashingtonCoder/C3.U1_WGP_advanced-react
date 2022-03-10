@@ -57,6 +57,7 @@ export default class App extends React.Component {
   }
 
   render() {
+    throw new Error('gaga')
     return (
       <div>
         <div id="todoList">
