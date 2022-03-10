@@ -61,6 +61,11 @@ describe('App component', () => {
     fireEvent.change(input, { target: { value: 'a' } })
     // assert that input acquired the value
     expect(input).toHaveValue('a')
+    expect(submitBtn).toBeEnabled()
+    // type on input
+    fireEvent.change(input, { target: { value: 'ab' } })
+    // assert that input acquired the value
+    expect(input).toHaveValue('ab')
     // assert that btn is enabled now
     expect(submitBtn).toBeEnabled()
   })
