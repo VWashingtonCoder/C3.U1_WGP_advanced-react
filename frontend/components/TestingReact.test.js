@@ -6,4 +6,9 @@ import App from './TestingReact'
 beforeEach(() => {
   render(<App />)
 })
+afterEach(() => {
+  // destroy fake DOM
+  // no need, happnens automatically
+})
+
 
