@@ -22,7 +22,7 @@ render(
         <Route path="/" element={<ClassComponents foo='bar' />} />
         <Route path="/react-lifecycle" element={<TheReactLifecycle />} />
         <Route path="/custom-hooks" element={<CustomHooks />} />
-        <Route path="/testing-react" element={<TestingReact />} />
+        <Route path="/testing-react" element={<TestingReact date="yesterday"/>} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
