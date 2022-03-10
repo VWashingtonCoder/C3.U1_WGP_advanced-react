@@ -43,6 +43,6 @@ describe('App component', () => {
     const firstTodo = await screen.findByText('walk the dog', { exact: false })
     expect(firstTodo).toBeInTheDocument()
     const secondTodo = await screen.findByText(/learn react/i)
-    expect(secondTodo.textContent).toBe('foo')
+    expect(secondTodo.textContent).toBe('Learn React ✔️')
   })
 })
