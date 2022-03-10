@@ -20,6 +20,7 @@ describe('App component', () => {
   })
   test('Renders heading "Todos:"', () => {
     // const heading = document.querySelector('h2') // not like this
-    
+    const heading = screen.queryByText('Todos:')
+    console.log(heading)
   })
 })
