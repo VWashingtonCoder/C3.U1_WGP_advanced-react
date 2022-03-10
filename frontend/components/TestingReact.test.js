@@ -29,4 +29,7 @@ describe('App component', () => {
     expect(h2).toBeVisible() // an assertion
     expect(h2).toBeInTheDocument() // another assertion
   })
+  test('Renders the correct date', () => {
+    
+  })
 })
