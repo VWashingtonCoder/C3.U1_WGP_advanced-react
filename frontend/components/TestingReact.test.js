@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-  render(<App date="tomorrow"/>)
+  render(<App date="yesterday"/>)
 })
 
 afterEach(() => {
@@ -30,6 +30,7 @@ describe('App component', () => {
     expect(h2).toBeInTheDocument() // another assertion
   })
   test('Renders the correct date', () => {
-    screen.getByText('tomorrow')
+    // queryBy -> these return null if the thing is not found
+    screen.getByText('tomorrow') // getBy -> these fail the test outright if not found
   })
 })
