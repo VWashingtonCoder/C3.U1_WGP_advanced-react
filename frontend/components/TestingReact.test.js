@@ -50,4 +50,7 @@ describe('App component', () => {
     const haveFuns = screen.getAllByText('have fun', { exact: false })
     expect(haveFuns).toHaveLength(2)
   })
+  test('submit button is disabled until we type one char', () => {
+    const submitBtn = 
+  })
 })
