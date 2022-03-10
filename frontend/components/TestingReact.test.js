@@ -40,6 +40,6 @@ describe('App component', () => {
   test('renders first todo', async () => {
     // getBy
     // queryBy
-    const firstTodo = await findBy
+    const firstTodo = await screen.findByText('walk the dog', { exact: false })
   })
 })
