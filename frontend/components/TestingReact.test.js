@@ -46,4 +46,7 @@ describe('App component', () => {
     const secondTodo = await screen.findByText(/learn react/i)
     expect(secondTodo.textContent).toBe('Learn React ✔️')
   })
+  test('renders have fun twice', () => {
+    
+  })
 })
