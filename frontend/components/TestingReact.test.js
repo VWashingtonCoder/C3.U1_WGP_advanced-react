@@ -69,6 +69,7 @@ describe('App component', () => {
     expect(input).toHaveValue('ab')
   })
   test('we can submit a new todo and it renders to the screen', () => {
-    
+    const input = screen.getByPlaceholderText('Type todo')
+    fireEvent.change(input, { target: { value: 'a' } })
   })
 })
