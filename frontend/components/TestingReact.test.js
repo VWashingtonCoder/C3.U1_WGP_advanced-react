@@ -30,6 +30,6 @@ describe('App component', () => {
     expect(h2).toBeInTheDocument() // another assertion
   })
   test('Renders the correct date', () => {
-    
+    screen.getByText('tomorrow')
   })
 })
