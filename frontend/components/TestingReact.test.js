@@ -24,4 +24,7 @@ describe('App component', () => {
     expect(heading).toBeVisible() // an assertion
     expect(heading).toBeInTheDocument() // another assertion
   })
+  test('Renders heading (grab by test id)', () => {
+    const h2 = screen.queryByTestId()
+  })
 })
