@@ -55,6 +55,6 @@ describe('App component', () => {
     expect(submitBtn).toBeDisabled()
     const input = screen.getByPlaceholderText('Type todo')
     fireEvent.change(input, { target: { value: 'a' } })
-    screen.debug()
+    expect(input).toHaveValue('a')
   })
 })
