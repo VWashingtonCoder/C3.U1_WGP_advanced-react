@@ -51,6 +51,7 @@ describe('App component', () => {
     expect(haveFuns).toHaveLength(2)
   })
   test('submit button is disabled until we type one char', () => {
-    const submitBtn = 
+    const submitBtn = screen.getByText('Submit Todo')
+    expect()
   })
 })
